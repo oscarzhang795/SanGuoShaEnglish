@@ -1,4 +1,4 @@
-package com.example.oscar.sanguoshaenglish.Fragments
+package com.example.oscar.sanguoshaenglish.Adapters
 
 import android.graphics.Bitmap
 import android.support.v7.widget.RecyclerView

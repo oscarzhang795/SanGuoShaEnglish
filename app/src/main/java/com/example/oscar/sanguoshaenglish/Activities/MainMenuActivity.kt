@@ -1,4 +1,4 @@
-package com.example.oscar.sanguoshaenglish
+package com.example.oscar.sanguoshaenglish.Activities
 
 import android.os.Bundle
 import android.support.v4.app.FragmentManager
@@ -8,6 +8,7 @@ import com.example.oscar.sanguoshaenglish.Fragments.CardsFragment
 import com.example.oscar.sanguoshaenglish.Fragments.CharactersFragment
 import com.example.oscar.sanguoshaenglish.Fragments.HowToPlayFragment
 import com.example.oscar.sanguoshaenglish.Fragments.MainMenuFragment
+import com.example.oscar.sanguoshaenglish.R
 
 class MainMenuActivity : AppCompatActivity() {
 
