@@ -10,6 +10,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
+import com.example.oscar.sanguoshaenglish.Activities.MainMenuActivity
 import com.example.oscar.sanguoshaenglish.Adapters.CharactersAdapter
 import com.example.oscar.sanguoshaenglish.R
 import kotlinx.android.synthetic.main.fragment_characters.*
@@ -20,6 +21,7 @@ class CharactersFragment : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        (activity as MainMenuActivity).supportActionBar?.title = "Characters"
     }
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {

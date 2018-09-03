@@ -11,6 +11,15 @@ import kotlinx.android.synthetic.main.fragment_main_menu.*
 
 class MainMenuFragment : Fragment() {
 
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+    }
+
+    override fun onResume() {
+        super.onResume()
+        (activity as MainMenuActivity).supportActionBar?.title = "San Guo Sha English"
+    }
+
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
         val view = inflater.inflate(R.layout.fragment_main_menu, container, false)
         return view
@@ -23,8 +32,5 @@ class MainMenuFragment : Fragment() {
         btn_all_cards.setOnClickListener {  (activity as MainMenuActivity).showCardsFragment() }
     }
 
-    fun setupBottomNav() {
-
-    }
 
 }
