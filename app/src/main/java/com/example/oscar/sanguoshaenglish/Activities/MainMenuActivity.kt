@@ -16,8 +16,14 @@ class MainMenuActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main_menu)
         showMainMenuFragment()
+
+
     }
 
+
+    /*************************************************
+     * Fragment Displays
+     *************************************************/
     fun showHowToPlayFragment() {
         var fragment = supportFragmentManager.findFragmentByTag(HowToPlayFragment::class.java.simpleName)
         if (fragment == null) {
@@ -58,6 +64,7 @@ class MainMenuActivity : AppCompatActivity() {
         }
     }
 
+    // Extension function for transactions
     private fun FragmentManager.fragAction(action: FragmentTransaction.() -> FragmentTransaction) {
         val trans = this.beginTransaction()
         trans.action()
