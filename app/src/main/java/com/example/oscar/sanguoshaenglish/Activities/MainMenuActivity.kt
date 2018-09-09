@@ -4,11 +4,18 @@ import android.os.Bundle
 import android.support.v4.app.FragmentManager
 import android.support.v4.app.FragmentTransaction
 import android.support.v7.app.AppCompatActivity
+import android.util.Log
+import com.beust.klaxon.JsonReader
+import com.beust.klaxon.Klaxon
+import com.example.oscar.sanguoshaenglish.Entities.Character
 import com.example.oscar.sanguoshaenglish.Fragments.CardsFragment
 import com.example.oscar.sanguoshaenglish.Fragments.CharactersFragment
 import com.example.oscar.sanguoshaenglish.Fragments.HowToPlayFragment
 import com.example.oscar.sanguoshaenglish.Fragments.MainMenuFragment
 import com.example.oscar.sanguoshaenglish.R
+import com.google.firebase.firestore.FirebaseFirestore
+import org.json.JSONArray
+import java.io.StringReader
 
 class MainMenuActivity : AppCompatActivity() {
 
@@ -16,8 +23,26 @@ class MainMenuActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main_menu)
         showMainMenuFragment()
+        loadDB()
     }
 
+    fun loadDB() {
+        val inputStream = applicationContext.resources.assets.open("characters.json")
+        val klaxon = Klaxon()
+        val parsed = klaxon.parseArray<Character>(inputStream)
+//        Log.i("HERE", parsed?.size.toString())
+        val ref = FirebaseFirestore.getInstance()
+        parsed?.forEach {
+            when(it.alignment){
+                "Shu" -> ref.collection("shucharacters").add(it)
+                "Wei" -> ref.collection("weicharacters").add(it)
+                "Wu" -> ref.collection("wucharacters").add(it)
+                "Kingdomless" -> ref.collection("kingdomlesscharacters").add(it)
+            }
+        }
+
+
+    }
 
     /*************************************************
      * Fragment Displays

@@ -7,6 +7,6 @@ data class Character(
     val alignment: String,
     val od: Boolean,
     val emperor: Boolean,
-    val image: Any?,
-    val abilities: ArrayList<String>
+    val image_name: String,
+    val abilities: List<Ability>
 )

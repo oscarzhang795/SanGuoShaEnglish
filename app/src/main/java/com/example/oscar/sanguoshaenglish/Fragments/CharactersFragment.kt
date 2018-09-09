@@ -30,14 +30,14 @@ class CharactersFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        viewManager = GridLayoutManager(this.context, 3)
-        viewAdapter = CharactersAdapter(charactersList)
-
-        rv_char_list.apply {
-            setHasFixedSize(true)
-            layoutManager = viewManager
-            adapter = viewAdapter
-        }
+//        viewManager = GridLayoutManager(this.context, 3)
+//        viewAdapter = CharactersAdapter(charactersList)
+//
+//        rv_char_list.apply {
+//            setHasFixedSize(true)
+//            layoutManager = viewManager
+//            adapter = viewAdapter
+//        }
     }
 
 

@@ -1,0 +1,2792 @@
+[
+    {
+        "name": "Liu Bei",
+        "title": "Hero Through Troubled Times",
+        "alignment": "Shu",
+        "od": false,
+        "emperor": true,
+        "image_name": "image044",
+        "abilities": [
+            {
+                "name": "Kindness",
+                "description": "During your main phase, You may give any number of cards in your hand to any number of heroes, the first time you give out 2 or more cards to a hero , you gain 1 Health",
+                "emperor_ability": false
+            },
+            {
+                "name": "Rouse",
+                "description": "(Emperor Ability) Whenever you need to play or discard an \"Attack\", any other Shu heroes can play or discard for you",
+                "emperor_ability": true
+            }
+        ]
+    },
+    {
+        "name": "Guan Yu",
+        "title": "Bearded Gentleman",
+        "alignment": "Shu",
+        "od": false,
+        "emperor": false,
+        "image_name": "image045",
+        "abilities": [
+            {
+                "name": "Saint Warrior",
+                "description": "You may play or use any red cards from your hand or equipment zone as \"Attack\"",
+                "emperor_ability": false
+            }
+        ]
+    },
+    {
+        "name": "Zhang Fei",
+        "title": "A match for ten thousand warriors",
+        "alignment": "Shu",
+        "od": false,
+        "emperor": false,
+        "image_name": "image046",
+        "abilities": [
+            {
+                "name": "Roar",
+                "description": "You may play any number of \"Attack\" during your turn",
+                "emperor_ability": false
+            }
+        ]
+    },
+    {
+        "name": "Zhuge Liang",
+        "title": "Prime minister who has passed his prime",
+        "alignment": "Shu",
+        "od": false,
+        "emperor": false,
+        "image_name": "image047",
+        "abilities": [
+            {
+                "name": "Stargazing",
+                "description": "At the beginning of the turn, you may look at the top X cards of your library, where X is equal to the number of surviving heroes (Max 5), you may choose to put any  number of these cards on top of the library and bottom of the library in any order",
+                "emperor_ability": false
+            },
+            {
+                "name": "Empty Fort",
+                "description": "(Passive) When you have no cards in your hand, you cannot be the target of \"Attack\" or \" Duel",
+                "emperor_ability": false
+            }
+        ]
+    },
+    {
+        "name": "Zhao Yun",
+        "title": "The Young General",
+        "alignment": "Shu",
+        "od": false,
+        "emperor": false,
+        "image_name": "image048",
+        "abilities": [
+            {
+                "name": "Dragon Courage",
+                "description": "You may play or use \" Attack\" as \" Dodge\" and vice versa",
+                "emperor_ability": false
+            }
+        ]
+    },
+    {
+        "name": "Ma Chao",
+        "title": "Lone horseman that can outmatch a thousand troops",
+        "alignment": "Shu",
+        "od": false,
+        "emperor": false,
+        "image_name": "image049",
+        "abilities": [
+            {
+                "name": "Horsemanship",
+                "description": "Your range with other heroes is always reduced by 1",
+                "emperor_ability": false
+            },
+            {
+                "name": "Iron Calvary",
+                "description": "Whenever you play an \"Attack\" on a hero, you may perform a judgment, If the result is red, the \"Attack\" cannot be responded by \"Dodge\"",
+                "emperor_ability": false
+            }
+        ]
+    },
+    {
+        "name": "Huang Yue Ying",
+        "title": "Veiled Heroine",
+        "alignment": "Shu",
+        "od": false,
+        "emperor": false,
+        "image_name": "image050",
+        "abilities": [
+            {
+                "name": "Gathering Wisdom",
+                "description": "Whenever you play an non-delay tactics card, draw a card",
+                "emperor_ability": false
+            },
+            {
+                "name": "Wondrous Talent",
+                "description": "Ignore range when you play a tactics card",
+                "emperor_ability": false
+            }
+        ]
+    },
+    {
+        "name": "Sun Quan",
+        "title": "Young and Worthy Lord",
+        "alignment": "Wu",
+        "od": false,
+        "emperor": true,
+        "image_name": "image051",
+        "abilities": [
+            {
+                "name": "Balance of Power",
+                "description": "Once per main phase, you may discard any number of cards  in your hand and equipment zone and draw that many cards",
+                "emperor_ability": false
+            },
+            {
+                "name": "Rescue",
+                "description": "(Emperor Ability, passive) Whenever you are on the brink of death and Wu heroes use a \"Peach\" on you, you gain 2 Health instead of 1",
+                "emperor_ability": true
+            }
+        ]
+    },
+    {
+        "name": "Gan Ning",
+        "title": "Pirate with Silk Sails",
+        "alignment": "Wu",
+        "od": false,
+        "emperor": false,
+        "image_name": "image052",
+        "abilities": [
+            {
+                "name": "Surprise Raid",
+                "description": "During your main phase, you may play any black cards in your hand and equipment zone as \"Burn Bridges\"",
+                "emperor_ability": false
+            }
+        ]
+    },
+    {
+        "name": "Lu Meng",
+        "title": "Crossing the river in White Robes",
+        "alignment": "Wu",
+        "od": false,
+        "emperor": false,
+        "image_name": "image053",
+        "abilities": [
+            {
+                "name": "Self-Restraint",
+                "description": "If you did not play or discard any \"Attack\" during your main phase, you may skip your discard phase",
+                "emperor_ability": false
+            }
+        ]
+    },
+    {
+        "name": "Huang Gai",
+        "title": "Sacrificing for the Country",
+        "alignment": "Wu",
+        "od": false,
+        "emperor": false,
+        "image_name": "image054",
+        "abilities": [
+            {
+                "name": "Sacrificial Injury",
+                "description": "During your main phase, you may lose 1 life to draw 2 cards",
+                "emperor_ability": false
+            }
+        ]
+    },
+    {
+        "name": "Zhou Yu",
+        "title": "Wu Viceroy",
+        "alignment": "Wu",
+        "od": false,
+        "emperor": false,
+        "image_name": "image055",
+        "abilities": [
+            {
+                "name": "Dashing Hero",
+                "description": "During your drawing phase, draw an additional card",
+                "emperor_ability": false
+            },
+            {
+                "name": "Sow Discord",
+                "description": "Once per main phase, you may target another hero. That hero choose a suit, then take one card from your hand and reveal it. If it is not the chosen suit, you deal one damage to that hero. Afterwards, that hero put the revealed card into his hand",
+                "emperor_ability": false
+            }
+        ]
+    },
+    {
+        "name": "Da Qiao",
+        "title": "Reserved Beauty",
+        "alignment": "Wu",
+        "od": false,
+        "emperor": false,
+        "image_name": "image056",
+        "abilities": [
+            {
+                "name": "National Beauty",
+                "description": "During your main phase, you may use your DIAMONDS cards as \"Acedia\"",
+                "emperor_ability": false
+            },
+            {
+                "name": "Displace",
+                "description": "Whenever you became the target of an \"Attack\", you may discard a card from your hand or equipment zone. If you do, choose another target hero (except the attacker) within your attack range, that hero becomes the new target of the \"Attack\"",
+                "emperor_ability": false
+            }
+        ]
+    },
+    {
+        "name": "Lu Xun",
+        "title": "The meek scholar with Valiant talents",
+        "alignment": "Wu",
+        "od": false,
+        "emperor": false,
+        "image_name": "image057",
+        "abilities": [
+            {
+                "name": "Humility",
+                "description": "(Passive) You cannot be the target of \"Plifer\" and \"Acedia\"",
+                "emperor_ability": false
+            },
+            {
+                "name": "One after another",
+                "description": "Whenever you have no cards in your hand, you may draw a card",
+                "emperor_ability": false
+            }
+        ]
+    },
+    {
+        "name": "Sun Shang Xiang",
+        "title": "Archery Princess",
+        "alignment": "Wu",
+        "od": false,
+        "emperor": false,
+        "image_name": "image058",
+        "abilities": [
+            {
+                "name": "Marriage",
+                "description": "Once per main phase, you may discard 2 cards and choose a damaged male hero, if you do, you and that hero gain 1 life",
+                "emperor_ability": false
+            },
+            {
+                "name": "Warrior Princess",
+                "description": "Whenever a card is removed from your equipment zone, draw 2 cards",
+                "emperor_ability": false
+            }
+        ]
+    },
+    {
+        "name": "Cao Cao",
+        "title": "Martial Emperor of Wei",
+        "alignment": "Wei",
+        "od": false,
+        "emperor": true,
+        "image_name": "image059",
+        "abilities": [
+            {
+                "name": "Villainous Hero",
+                "description": "Whenever an effect of a card cause damage dealt on you, you may put that card into your hand",
+                "emperor_ability": false
+            },
+            {
+                "name": "Escort",
+                "description": "(Emperor Ability) Whenever you need to play or use a \"Dodge\", you may ask other Wei heroes to play or discard a \"Dodge\" for you",
+                "emperor_ability": true
+            }
+        ]
+    },
+    {
+        "name": "Sima Yi",
+        "title": "Ever Watchful Wolf",
+        "alignment": "Wei",
+        "od": false,
+        "emperor": false,
+        "image_name": "image060",
+        "abilities": [
+            {
+                "name": "Retaliation",
+                "description": "Whenever a hero deals damage to you, you may take 1 card from his hand or equipment zone",
+                "emperor_ability": false
+            },
+            {
+                "name": "Demonic talent",
+                "description": "Whenever a judgment card is revealed, you may replace that card with a card with your hand.",
+                "emperor_ability": false
+            }
+        ]
+    },
+    {
+        "name": "Xiahou Dun",
+        "title": "One-eyed warrior",
+        "alignment": "Wei",
+        "od": false,
+        "emperor": false,
+        "image_name": "image061",
+        "abilities": [
+            {
+                "name": "Staunch",
+                "description": "Whenever you are dealt damage, you may perform a judgment. If the result is not HEARTS , the source of damage choose one:\nDiscard 2 cards from his handYou deal one damage to him",
+                "emperor_ability": false
+            }
+        ]
+    },
+    {
+        "name": "Zhang Liao",
+        "title": "General of the Vanguard",
+        "alignment": "Wei",
+        "od": false,
+        "emperor": false,
+        "image_name": "image062",
+        "abilities": [
+            {
+                "name": "Ambush",
+                "description": "During your draw phase, you may skip your draw. If you do, choose up to 2 target players and take 1 card from their hand",
+                "emperor_ability": false
+            }
+        ]
+    },
+    {
+        "name": "Xu Chu",
+        "title": "Crazy Tiger",
+        "alignment": "Wei",
+        "od": false,
+        "emperor": false,
+        "image_name": "image063",
+        "abilities": [
+            {
+                "name": "Bare-chested",
+                "description": "You can choose to draw 1 card less during your draw phase, if you do, during the next main phase your \"Attack\" and \"Duel\" deals 1 additional damage",
+                "emperor_ability": false
+            }
+        ]
+    },
+    {
+        "name": "Guo Jia",
+        "title": "The Prophet with an early end",
+        "alignment": "Wei",
+        "od": false,
+        "emperor": false,
+        "image_name": "image064",
+        "abilities": [
+            {
+                "name": "Heaven\u2019s Envy",
+                "description": "Whenever your judgment is resolved, put that judgment card into your hand",
+                "emperor_ability": false
+            },
+            {
+                "name": "Bestowed Rouse",
+                "description": "Whenever you are dealt damage, for each damage you receive, draw 2 cards and set it aside. You give 1 card to a target player, and the other card to another target player (Can be the same target player for both cards)",
+                "emperor_ability": false
+            }
+        ]
+    },
+    {
+        "name": "Zhen Ji",
+        "title": "Unfortunate Beauty",
+        "alignment": "Wei",
+        "od": false,
+        "emperor": false,
+        "image_name": "image065",
+        "abilities": [
+            {
+                "name": "Gorgeous Beauty",
+                "description": "You may play or use any black cards in your hand as \"Dodge\"",
+                "emperor_ability": false
+            },
+            {
+                "name": "Goddess of Luo",
+                "description": "At the beginning of your upkeep, you may perform a judgement, if the result is black, put that card into your hand and repeat this process",
+                "emperor_ability": false
+            }
+        ]
+    },
+    {
+        "name": "Hua Tuo",
+        "title": "Miracle Physician",
+        "alignment": "Kingdomless",
+        "od": false,
+        "emperor": false,
+        "image_name": "image066",
+        "abilities": [
+            {
+                "name": "First Aid",
+                "description": "If it is not your turn, you may use red cards in your hand and equipment zone as \"Peach\"",
+                "emperor_ability": false
+            },
+            {
+                "name": "The Book of Green Vesicle",
+                "description": "Once per main phase, you may discard a card in your hand and choose target hero, that hero gain 1 Health",
+                "emperor_ability": false
+            }
+        ]
+    },
+    {
+        "name": "Lu Bu",
+        "title": "Embodiment of Force",
+        "alignment": "Kingdomless",
+        "od": false,
+        "emperor": false,
+        "image_name": "image067",
+        "abilities": [
+            {
+                "name": "Matchless",
+                "description": "(Passive) If you are the source of an \"Attack\", the defending player need to respond with 2 \"Dodge\" instead of one to cancel. If you are involved in a duel, the other player needs to discard 2 \"Attack\" in respone to your discarded \"Attack\"",
+                "emperor_ability": false
+            }
+        ]
+    },
+    {
+        "name": "Diao Chan",
+        "title": "Unrivaled dancing princess",
+        "alignment": "Kingdomless",
+        "od": false,
+        "emperor": false,
+        "image_name": "image068",
+        "abilities": [
+            {
+                "name": "Wedge Driving",
+                "description": "Once per main phase, you may choose 2 target male heroes and discard a card. If you do, this is treat as one of them play a \"Duel\" on the other",
+                "emperor_ability": false
+            },
+            {
+                "name": "Eclipse",
+                "description": "At the end of your turn, you may draw a card",
+                "emperor_ability": false
+            }
+        ]
+    },
+    {
+        "name": "Hua Xiong",
+        "title": "Devil General",
+        "alignment": "Kingdomless",
+        "od": false,
+        "emperor": false,
+        "image_name": "image069",
+        "abilities": [
+            {
+                "name": "Swagger",
+                "description": "(Passive) Whenever a hero use a red \"Attack\" and deals damage to you, he may gain 1 Health or draw a card",
+                "emperor_ability": false
+            }
+        ]
+    },
+    {
+        "name": "Yuan Shu",
+        "title": "Ever Increasing Ambition",
+        "alignment": "Kingdomless",
+        "od": false,
+        "emperor": false,
+        "image_name": "image070",
+        "abilities": [
+            {
+                "name": "Arrogant",
+                "description": "At the beginning of the Emperor's turn, you may draw 1 card. If you do, Emperor's hand limit is reduced by 1 this turn",
+                "emperor_ability": false
+            },
+            {
+                "name": "All in same boat",
+                "description": "(Passive): Whenever another hero that can attack you plays an \"Attack\", if the number of cards in your hand is greater than your current health, he can only choose you as the target",
+                "emperor_ability": false
+            }
+        ]
+    },
+    {
+        "name": "Huang Zhong",
+        "title": "Old but Strong",
+        "alignment": "Shu",
+        "od": false,
+        "emperor": false,
+        "image_name": "image071",
+        "abilities": [
+            {
+                "name": "Fearsome Archer",
+                "description": "When you use an \"Attack\", you may target a hero whose range between you and him is less than the rank of that \"Attack\". Whenever you target a hero with an \"Attack\":\nIf number of cards in his hand is less than or equal to yours, this \u201cAttack\u201d cannot be canceled by \u201cDodge\u201dIf his current health is greater than or equal to your health, this \u201cAttack\u201d damage is +1",
+                "emperor_ability": false
+            }
+        ]
+    },
+    {
+        "name": "Wei Yan",
+        "title": "Bloodthirsty Lone wolf",
+        "alignment": "Shu",
+        "od": false,
+        "emperor": false,
+        "image_name": "image072",
+        "abilities": [
+            {
+                "name": "Violent Spirit",
+                "description": "Whenever you dealt damage to a player within your range, for each damage you dealt, choose one:\nGain 1 HealthDraw 1 card",
+                "emperor_ability": false
+            },
+            {
+                "name": "Surprise Tactics",
+                "description": "(Limited Ability) During your main phase, you may lose X life, then until the end of your turn, you may use additional X \"Attack\" and your range with other heroes are reduced by X",
+                "emperor_ability": false
+            }
+        ]
+    },
+    {
+        "name": "Xiahou Yuan",
+        "title": "Lightning Panther",
+        "alignment": "Wei",
+        "od": false,
+        "emperor": false,
+        "image_name": "image073",
+        "abilities": [
+            {
+                "name": "Extremespeed",
+                "description": "You may choose up to 3 of the following options:\nSkip your judgment and draw phaseSkip your main phase and discard an equipment card from your hand or equipment zoneSkip your discard phase and flip your hero cardFor each option you have chosen, treat that as playing an \u201cAttack\u201d targeting a hero, ignore range for these \u201cAttack\u201d",
+                "emperor_ability": false
+            }
+        ]
+    },
+    {
+        "name": "Cao Ren",
+        "title": "The Great General",
+        "alignment": "Wei",
+        "od": false,
+        "emperor": false,
+        "image_name": "image074",
+        "abilities": [
+            {
+                "name": "Entrench",
+                "description": "At the end of your turn, you may flip your hero card. If you do, draw 4 cards then discard a card. If the discarded card is equipment, you play that card instead.",
+                "emperor_ability": false
+            },
+            {
+                "name": "Rescue from Siege",
+                "description": "You may play cards in your equipment zone as \"Impeccable Plan\". When your hero card is flip to face up position, you may discard a card. If you do, you may move a card in target player equipment or judgment zone to another target player's equipment or judgment zone",
+                "emperor_ability": false
+            }
+        ]
+    },
+    {
+        "name": "Xiao Qiao",
+        "title": "The unconventional beauty",
+        "alignment": "Wu",
+        "od": false,
+        "emperor": false,
+        "image_name": "image075",
+        "abilities": [
+            {
+                "name": "Heavenly Scent",
+                "description": "Whenever you are dealt damage, you may discard a HEARTS card. If you do, choose another target hero, that hero takes that damage instead and draw that many cards",
+                "emperor_ability": false
+            },
+            {
+                "name": "Youthful Beauty",
+                "description": "(Passive) Your SPADES cards in hand and equipment zone and your SPADES judgement cards are considered as HEARTS cards instead",
+                "emperor_ability": false
+            }
+        ]
+    },
+    {
+        "name": "Zhou Tai",
+        "title": "Battle Records in Scars",
+        "alignment": "Wu",
+        "od": false,
+        "emperor": false,
+        "image_name": "image076",
+        "abilities": [
+            {
+                "name": "Undying",
+                "description": "(Passive) Whenever you are on the blink of death, put a card onto your hero card as \"Wound\". Then if there are no \"Wound\" with same rank, you gain 1 Health. If there are \"Wound\" with same rank, put the last \"Wound\" into the graveyard. If you have \"Wound\" on your hero card, your hand size is equal to the number of \"Wound\"",
+                "emperor_ability": false
+            },
+            {
+                "name": "Inspire",
+                "description": "Whenever a card in a hero's hand is discarded or taken by another hero, you may lose 1 life. If you do, that hero draw 2 cards",
+                "emperor_ability": false
+            }
+        ]
+    },
+    {
+        "name": "Yu Ji",
+        "title": "Priest of Tai Ping",
+        "alignment": "Kingdomless",
+        "od": false,
+        "emperor": false,
+        "image_name": "image077",
+        "abilities": [
+            {
+                "name": "Bewilder",
+                "description": "You may use this ability during other heroes main phase. Once per main phase, you may set a card face down aside and announce a basic card or non-delay tactics card's name. This card is treated as the announced card. Any hero may doubt the names of the announced card and the set card are different, if a hero does, reveal the set card:\nIf the set card name is different to the announced card, negate the card\u2019s effect.If the set card name is the same as the announced card, heroes who doubted this card gains \u201cHaunted\u201d",
+                "emperor_ability": false
+            },
+            {
+                "name": "Haunted",
+                "description": "(Passive) You cannot doubt a card played by \"Bewilder\", You lose all your ability except \"Haunted\"  if your health is equal to 1",
+                "emperor_ability": false
+            }
+        ]
+    },
+    {
+        "name": "Zhang Zhao",
+        "title": "Heaven\u2019s General",
+        "alignment": "Kingdomless",
+        "od": false,
+        "emperor": true,
+        "image_name": "image078",
+        "abilities": [
+            {
+                "name": "Lightning Strike",
+                "description": "Whenever you play or use a \"Dodge\" , you may choose another target hero and perform a judgment:\nIf the result is \u2660, you deal 2 damage to himIf the result is \u2663, you deal 1 damage to him and gain 1 Health",
+                "emperor_ability": false
+            },
+            {
+                "name": "Dark Magic",
+                "description": "Whenever a hero perform a judgment, you may swap the judgment card with a black card in your hand and equipment zone",
+                "emperor_ability": false
+            },
+            {
+                "name": "Amber Sky",
+                "description": "(Emperor Ability) Once per other Kingdomless heroes turn, they may give you a \"Dodge\" or \"Lightning Bolt\"",
+                "emperor_ability": true
+            }
+        ]
+    },
+    {
+        "name": "Dian Wei",
+        "title": "Ancient Berserker",
+        "alignment": "Wei",
+        "od": false,
+        "emperor": false,
+        "image_name": "image079",
+        "abilities": [
+            {
+                "name": "Assault",
+                "description": "Once per main phase, you may lose 1 Life or discard an equipment, if you do, you deal 1 damage to target hero",
+                "emperor_ability": false
+            }
+        ]
+    },
+    {
+        "name": "Xun Yu",
+        "title": "Genius Advisor",
+        "alignment": "Wei",
+        "od": false,
+        "emperor": false,
+        "image_name": "image080",
+        "abilities": [
+            {
+                "name": "Rouse the Tiger",
+                "description": "Once per main phase, you may clash with a hero with more health than you. If you did not win, that hero deals 1 damage to you. If you win, choose another target hero within the attack range of the loser. The loser deals 1 damage to that hero.",
+                "emperor_ability": false
+            },
+            {
+                "name": "Eternal Loyalty",
+                "description": "Whenever you are dealt damage, for each damage you receive, choose a target hero and he draw X cards (X is the difference between number of cards in hand and target hero maximum health, max 5)",
+                "emperor_ability": false
+            }
+        ]
+    },
+    {
+        "name": "Pang Tong",
+        "title": "Young Phoenix",
+        "alignment": "Shu",
+        "od": false,
+        "emperor": false,
+        "image_name": "image081",
+        "abilities": [
+            {
+                "name": "Shackles",
+                "description": "During you main phase, you may use a CLUBS card in your hand as \"Iron Chains\" or recast that card",
+                "emperor_ability": false
+            },
+            {
+                "name": "Nirvana",
+                "description": "(Limited Ability) When you are on blink of death, you may discard all cards in your hand, equipment zone and judgement zone, if you do, flip your hero card face up, draw 3 cards and gain 3 life",
+                "emperor_ability": false
+            }
+        ]
+    },
+    {
+        "name": "Zhuge Liang (Fire)",
+        "title": "Sleeping Dragon",
+        "alignment": "Shu",
+        "od": false,
+        "emperor": false,
+        "image_name": "image082",
+        "abilities": [
+            {
+                "name": "Eight Trigrams",
+                "description": "(Passive) If you have no armor card in equipment zone, you are consider to have equipped \"Eight Trigrams\"",
+                "emperor_ability": false
+            },
+            {
+                "name": "Arson",
+                "description": "During your main phase, you may play red cards in your hand as \"Blaze\"",
+                "emperor_ability": false
+            },
+            {
+                "name": "See Through",
+                "description": "You may play black cards in your hand as \"Impeccable Plan\"",
+                "emperor_ability": false
+            }
+        ]
+    },
+    {
+        "name": "Tai Shi Ci",
+        "title": "Ardent and Loyal Warrior",
+        "alignment": "Wu",
+        "od": false,
+        "emperor": false,
+        "image_name": "image083",
+        "abilities": [
+            {
+                "name": "Righteousness",
+                "description": "Once per main phase, you may clash with another hero. If you win, until the end of your turn, you can play an additional \"Attack\", \"Attack\" you used can target one additional hero and ignore range for your \"Attack\". If you did not win, you cannot use \"Attack\" this turn",
+                "emperor_ability": false
+            }
+        ]
+    },
+    {
+        "name": "Pang De",
+        "title": "Rider and ride as one",
+        "alignment": "Kingdomless",
+        "od": false,
+        "emperor": false,
+        "image_name": "image084",
+        "abilities": [
+            {
+                "name": "Horsemanship",
+                "description": "Your range with other players is always reduced by 1",
+                "emperor_ability": false
+            },
+            {
+                "name": "Fierce Attack",
+                "description": "Whenever you play an \"Attack\" targeting a hero, you may discard a card from that hero's hand or equipment zone. If the discarded card is an equipment, this \"Attack\" cannot be cancelled by \" Dodge\". Otherwise, that hero put this \"Attack\" card into their hand",
+                "emperor_ability": false
+            }
+        ]
+    },
+    {
+        "name": "Yan Liand & Wen Chou",
+        "title": "Tiger and Wolf brothers",
+        "alignment": "Kingdomless",
+        "od": false,
+        "emperor": false,
+        "image_name": "image085",
+        "abilities": [
+            {
+                "name": "Dual Heroes",
+                "description": "During your draw phase, you may skip your draw and perform a judgment, reveal the judgment card and put it into your hand. Until the end of your turn, you may play cards in your hand with opposite colour to the revealed card as \" Duel\"",
+                "emperor_ability": false
+            }
+        ]
+    },
+    {
+        "name": "Yuan Shao",
+        "title": "Noble Warlord",
+        "alignment": "Kingdomless",
+        "od": false,
+        "emperor": false,
+        "image_name": "image086",
+        "abilities": [
+            {
+                "name": "Random Strike",
+                "description": "During your main phase, you may play 2 cards of the same suit in your hand as \"Hail of Arrows\"",
+                "emperor_ability": false
+            },
+            {
+                "name": "Bloodline",
+                "description": "You maximum hand size is increase by X, where X is 2 times of other surviving kingdomless heroes",
+                "emperor_ability": false
+            }
+        ]
+    },
+    {
+        "name": "Xu Huang",
+        "title": "Reminiscence of Zhou Ya Fu",
+        "alignment": "Wei",
+        "od": false,
+        "emperor": false,
+        "image_name": "image087",
+        "abilities": [
+            {
+                "name": "Blockade",
+                "description": "During your main phase, you may play a black card in your hand or black equipment cards as \"Rations Depleted\". You can play \"Ration Depleted\" on heroes with a range of 2 between you and him",
+                "emperor_ability": false
+            }
+        ]
+    },
+    {
+        "name": "Cao Pi",
+        "title": "The great empire successor",
+        "alignment": "Wei",
+        "od": false,
+        "emperor": true,
+        "image_name": "image088",
+        "abilities": [
+            {
+                "name": "Unnatural Death",
+                "description": "You may put all cards own by another dead hero into your hand",
+                "emperor_ability": false
+            },
+            {
+                "name": "Exile",
+                "description": "Whenever you are dealt damage, you may have target hero flip their hero card. If you do, that player draw X cards (X is your lost health)",
+                "emperor_ability": false
+            },
+            {
+                "name": "Exaltation",
+                "description": "(Emperor Ability) Whenever a Wei hero's judgment is resolved, if that judgment card is black, he may let you draw a card",
+                "emperor_ability": true
+            }
+        ]
+    },
+    {
+        "name": "Sun Jian",
+        "title": "Martial Emperor of Unyielding",
+        "alignment": "Wu",
+        "od": false,
+        "emperor": false,
+        "image_name": "image089",
+        "abilities": [
+            {
+                "name": "Brave Spirit",
+                "description": "At the beginning of your turn, if you are damaged, you may have target hero other you to perform one of the following options:\nDraw X cards, then discard 1 card from Hand or Equipment zoneDraw 1 cards, then discard X card from Hand or Equipment zoneX is the amount of health you have lost",
+                "emperor_ability": false
+            }
+        ]
+    },
+    {
+        "name": "Dong Zhuo",
+        "title": "Archenemy",
+        "alignment": "Kingdomless",
+        "od": false,
+        "emperor": true,
+        "image_name": "image090",
+        "abilities": [
+            {
+                "name": "Drown in Wine",
+                "description": "You may use a SPADES card in your hand as \"Wine\"",
+                "emperor_ability": false
+            },
+            {
+                "name": "Garden of Lust",
+                "description": "(Passive) When Female hero play an \"Attack\" on you, it can only be cancelled by 2 \"Dodge\" and vice versa",
+                "emperor_ability": false
+            },
+            {
+                "name": "Collapse",
+                "description": "(Passive): At the end of your turn, if you are not the hero with lowest health, you must either lose 1 life or lose 1 unit of max health",
+                "emperor_ability": false
+            },
+            {
+                "name": "Tyrant",
+                "description": "(Emperor Ability) Whenever other Kingdomless hero deals damage, they may perform a judgment, if the result is black, you gain 1 health",
+                "emperor_ability": true
+            }
+        ]
+    },
+    {
+        "name": "Zhu Rong",
+        "title": "Queen of Wilds",
+        "alignment": "Shu",
+        "od": false,
+        "emperor": false,
+        "image_name": "image091",
+        "abilities": [
+            {
+                "name": "Elephant Army",
+                "description": "(Passive) You are immune to \"Barbarians Assault\". Whenever a \"Barbarians Assault\" played by other heroes is resolved and put into graveyard, put it into your hand",
+                "emperor_ability": false
+            },
+            {
+                "name": "Fierce Edge",
+                "description": "Whenever you dealt damage to target hero, you may clash with him. If you win, you may take 1 card from his hand or equipment zone and put into your hand",
+                "emperor_ability": false
+            }
+        ]
+    },
+    {
+        "name": "Meng Huo",
+        "title": "King of Southern Barbarians",
+        "alignment": "Shu",
+        "od": false,
+        "emperor": false,
+        "image_name": "image092",
+        "abilities": [
+            {
+                "name": "Culprit",
+                "description": "(Passive) You are immune to \"Barbarians Assault\". You are the source of any \"Barbarians Assault\"",
+                "emperor_ability": false
+            },
+            {
+                "name": "Resurgence",
+                "description": "During your draw phase, if you are damaged, you may skip your draw and reveal X card from the deck (X is equal to the amount of health you lost). For each HEARTS cards revealed, discard it and you gain 1 health then put the remaining revealed cards into your hand",
+                "emperor_ability": false
+            }
+        ]
+    },
+    {
+        "name": "Jia Xu",
+        "title": "Cold-blooded Advisor",
+        "alignment": "Kingdomless",
+        "od": false,
+        "emperor": false,
+        "image_name": "image093",
+        "abilities": [
+            {
+                "name": "Perfect Murder",
+                "description": "(Passive) During your turn, if a hero is on the blink of death, only you and that hero can use \"Peach\"",
+                "emperor_ability": false
+            },
+            {
+                "name": "Upheaval",
+                "description": "(Limited Ability) During your main phase, each hero other than you must play an \"attack\"  another hero closest to him or lose 1 health",
+                "emperor_ability": false
+            },
+            {
+                "name": "Shroud",
+                "description": "You cannot be the target of black tactics card",
+                "emperor_ability": false
+            }
+        ]
+    },
+    {
+        "name": "Lu Su",
+        "title": "The Maverick Diplomat",
+        "alignment": "Wu",
+        "od": false,
+        "emperor": false,
+        "image_name": "image094",
+        "abilities": [
+            {
+                "name": "Altruism",
+                "description": "During your draw phase, you may draw 2 additional cards, then if the number of cards in your hand is greater than 5, give half of the cards (rounded down) to another hero with least number of cards in hand",
+                "emperor_ability": false
+            },
+            {
+                "name": "Alliance",
+                "description": "Once per main phase, you may choose 2 target heroes and discard X cards from you hand or equipment zone (X is the difference between the number of cards in the targeted players' hand). If you do, those players exchange the cards in their hand.",
+                "emperor_ability": false
+            },
+            {
+                "name": "Mountain Expansion",
+                "description": "New Mechanics:\nAwakening AbilityUpon meeting the conditions on the hero card, you will gain a new ability",
+                "emperor_ability": false
+            }
+        ]
+    },
+    {
+        "name": "Zhang He",
+        "title": "The Military Clairvoyant",
+        "alignment": "Wei",
+        "od": false,
+        "emperor": false,
+        "image_name": "image095",
+        "abilities": [
+            {
+                "name": "Flexibility",
+                "description": "During you turn, you may discard a card in your hand to skip one of your turn phases (Except the start of turn and end of turn). If you skip:\nDraw Phase - Choose 2 target heroes and take 1 card from their hand into your handMain Phase - You may move an equipment card to another empty equipment zone, or move an judgment card to another empty judgment zone ",
+                "emperor_ability": false
+            }
+        ]
+    },
+    {
+        "name": "Deng Ai",
+        "title": "The Staunch Warrior",
+        "alignment": "Wei",
+        "od": false,
+        "emperor": false,
+        "image_name": "image096",
+        "abilities": [
+            {
+                "name": "Strategic Farming",
+                "description": "Whenever you play a card from your hand, or discard a card from your hand or equipment zone outside your turn, you perform a judgment. If the result is not HEARTS , you put the judgment card on your hero card. That card is considered as a \"Field\". Your range with other heroes are reduced by X, where X is the number of \"Field\" you have",
+                "emperor_ability": false
+            },
+            {
+                "name": "Dangerous Exploration",
+                "description": "(Awakening Ability) At the beginning of your turn, if you have 3 or more \"Field\", reduce your maximum health by 1 and gain \"Blitz\"",
+                "emperor_ability": false
+            },
+            {
+                "name": "Blitz",
+                "description": "You may play a \"Field\" as \"Plifer\"",
+                "emperor_ability": false
+            }
+        ]
+    },
+    {
+        "name": "Jiang Wei",
+        "title": "Dragon\u2019s Successor",
+        "alignment": "Shu",
+        "od": false,
+        "emperor": false,
+        "image_name": "image097",
+        "abilities": [
+            {
+                "name": "Provoke",
+                "description": "Once per main phase, you may target a hero who can attack you, he must play an \"Attack\" on you. If he does not, you choose and discard 1 card from his hand, equipment zone or judgment zone",
+                "emperor_ability": false
+            },
+            {
+                "name": "Recommence the Legacy",
+                "description": "(Awakening Ability) At the beginning of your turn, if you have no cards in your hand, gain 1 Life or draw 2 cards, then reduce your max health by 1 and gain \"Stargazing\"",
+                "emperor_ability": false
+            },
+            {
+                "name": "Stargazing",
+                "description": "Refer to Starter Zhuge Liang",
+                "emperor_ability": false
+            }
+        ]
+    },
+    {
+        "name": "Liu Shan",
+        "title": "The emperor with no achievements",
+        "alignment": "Shu",
+        "od": false,
+        "emperor": false,
+        "image_name": "image098",
+        "abilities": [
+            {
+                "name": "Relish",
+                "description": "(Passive) Whenever you become the target of an \"Attack\", ignore the effect of that \"Attack\" unless the attacker discard a basic card from his hand",
+                "emperor_ability": false
+            },
+            {
+                "name": "Devolution",
+                "description": "You may skip your main phase, then at the end of your turn, you may discard a card and target a hero. That hero immediately gain an extra turn",
+                "emperor_ability": false
+            },
+            {
+                "name": "Eiron",
+                "description": "(Emperor Ability, Awakening Ability) At the beginning of your turn, if you have the least health among all heroes, you increase your max health by 1, gain 1 health, then gain \"Rouse\"",
+                "emperor_ability": true
+            },
+            {
+                "name": "Rouse",
+                "description": "Refer to Starter Liu Bei",
+                "emperor_ability": false
+            }
+        ]
+    },
+    {
+        "name": "Sun Ce",
+        "title": "Young Conqueror of Jiangdong",
+        "alignment": "Wu",
+        "od": false,
+        "emperor": false,
+        "image_name": "image099",
+        "abilities": [
+            {
+                "name": "Ardor",
+                "description": "If you target other heroes with a \"Duel\" or red \"Attack\" and vice versa, you may draw a card",
+                "emperor_ability": false
+            },
+            {
+                "name": "Soul Aura",
+                "description": "(Awakening Ability) At the beginning of your turn, If you have exactly 1 Health, reduce your max health by 1, then Gain \"Dashing Hero\" and \"Brave Spirit\". You hand size is equal to your max health",
+                "emperor_ability": false
+            },
+            {
+                "name": "Hegemony",
+                "description": "(Emperor Ability) Once per other Wu heroes turn, he can clash with you, if he did not win, you can put the 2 clashed cards into your hand. If you have triggered Soul Aura, you can refuse this clash",
+                "emperor_ability": true
+            },
+            {
+                "name": "Dashing Hero",
+                "description": "Refer to Zhou Yu",
+                "emperor_ability": false
+            },
+            {
+                "name": "Brave Spirit",
+                "description": "Refer to Sun Jian",
+                "emperor_ability": false
+            }
+        ]
+    },
+    {
+        "name": "Zhang Zhao & Zhang Hong",
+        "title": "Genius Prime Ministers",
+        "alignment": "Wu",
+        "od": false,
+        "emperor": false,
+        "image_name": "image100",
+        "abilities": [
+            {
+                "name": "Blunt Advice",
+                "description": "During your main phase, you may equip a hero with an equipment card in your hand (You cannot replace his equipment), then draw 1 card",
+                "emperor_ability": false
+            },
+            {
+                "name": "Solid Governance",
+                "description": "After other heroes discard phase, you may return a card he discarded back to his hand, then you put all the other discarded cards into your hand",
+                "emperor_ability": false
+            }
+        ]
+    },
+    {
+        "name": "Zuo Ci",
+        "title": "The Mysterious Transcendent",
+        "alignment": "Kingdomless",
+        "od": false,
+        "emperor": false,
+        "image_name": "image101",
+        "abilities": [
+            {
+                "name": "Incarnation",
+                "description": "At the beginning of the game, you randomly take 2 unused hero cards as \"Incarnation\", then you reveal of the them. You gain 1 ability on that card (Cannot be Awakening, Limited or Emperor Ability) Your Gender and Faction becomes that card's gender and faction. At the beginning and end of turn, you may change your \"Incarnation\"",
+                "emperor_ability": false
+            },
+            {
+                "name": "Rebirth",
+                "description": "Whenever you are dealt damage, for each damage, acquire 1 \"Incarnation\" from unused hero cards",
+                "emperor_ability": false
+            }
+        ]
+    },
+    {
+        "name": "Cai Wen Ji",
+        "title": "Lonely Dame in Foreign lands",
+        "alignment": "Kingdomless",
+        "od": false,
+        "emperor": false,
+        "image_name": "image102",
+        "abilities": [
+            {
+                "name": "Song of Lament",
+                "description": "Whenever a hero is dealt damage by an \"Attack\", you may discard a card from your hand or equipment zone then perform a judgment. If the result is:\n\u2665 - The defender gains 1 Life\u2666 - The defender draws 2 cards\u2663 - The source of damage discard 2 cards\u2660 - The source of damage flip his hero card",
+                "emperor_ability": false
+            },
+            {
+                "name": "Sorrow",
+                "description": "(Passive) The hero who killed you lost all abilities for the rest of the game",
+                "emperor_ability": false
+            }
+        ]
+    },
+    {
+        "name": "Cao Zhi",
+        "title": "Virtuoso Poet",
+        "alignment": "Wei",
+        "od": false,
+        "emperor": false,
+        "image_name": "image103",
+        "abilities": [
+            {
+                "name": "Falling Bloom",
+                "description": "Whenever other heroes discard a CLUBS card or their CLUBS judgment card is put into graveyard, you may put any number of them into your hand",
+                "emperor_ability": false
+            },
+            {
+                "name": "Drunken Quatrain",
+                "description": "Whenever you need to play a \"Wine\", if your hero card is facing up, you may flip it face down. If you do, you are considered to have used a \"Wine\". Whenever you are dealt damage, if your hero card is facing down, you may flip it face up",
+                "emperor_ability": false
+            }
+        ]
+    },
+    {
+        "name": "Gao Shun",
+        "title": "Ever-Victorious Warrior",
+        "alignment": "Kingdomless",
+        "od": false,
+        "emperor": false,
+        "image_name": "image104",
+        "abilities": [
+            {
+                "name": "Fearless Charge",
+                "description": "Once per main phase, you may clash with another hero, if you win, until end of your turn, you ignore the effect of his armor ,ignore range for your cards played on that hero and you may okay any number of \"Attack\" on him. If you did not win, you cannot play \"Attack\" until the end of your turn",
+                "emperor_ability": false
+            },
+            {
+                "name": "Prohibition",
+                "description": "(Passive) Your \"Wine\" is considered as \"Attack\" instead",
+                "emperor_ability": false
+            }
+        ]
+    },
+    {
+        "name": "Chen Gong",
+        "title": "Upright and Heroic",
+        "alignment": "Kingdomless",
+        "od": false,
+        "emperor": false,
+        "image_name": "image105",
+        "abilities": [
+            {
+                "name": "Brilliant Scheme",
+                "description": "Once per main phase, you may give 1 equipment card or \"Attack\" to another target hero, then he can choose one of the following:\nConsidered to have used an \u201cAttack\u201d on another target hero of your choice (Needs to be within his attack range)Draw a card",
+                "emperor_ability": false
+            },
+            {
+                "name": "Late response",
+                "description": "(Passive) Whenever you are dealt damage outside your turn, you are immune to \"Attack\" and non-delay tactics card this turn",
+                "emperor_ability": false
+            }
+        ]
+    },
+    {
+        "name": "Ling Tong",
+        "title": "Forthright and Courageous",
+        "alignment": "Wu",
+        "od": false,
+        "emperor": false,
+        "image_name": "image106",
+        "abilities": [
+            {
+                "name": "Whirlwind",
+                "description": "Whenever you discard at least 2 cards during your discard phase, or you lose a card in your equipment zone, you may choose up to 2 target heroes and discard up to 2 cards from his/their hand or equipment zone",
+                "emperor_ability": false
+            }
+        ]
+    },
+    {
+        "name": "Ma Su",
+        "title": "The Arrogant Talent",
+        "alignment": "Shu",
+        "od": false,
+        "emperor": false,
+        "image_name": "image107",
+        "abilities": [
+            {
+                "name": "Talebearer",
+                "description": "Once per main phase, you may discard a card and choose target hero with the highest health, then you deal 1 damage to him",
+                "emperor_ability": false
+            },
+            {
+                "name": "Subdue the Barbarians",
+                "description": "Whenever you dealt damage to another hero, you may prevent that damage. If you do, take 1 card from that hero equipment or judgment zone and put it into your hand",
+                "emperor_ability": false
+            }
+        ]
+    },
+    {
+        "name": "Wu Guo Tai",
+        "title": "Martial Empress of Unyielding",
+        "alignment": "Wu",
+        "od": false,
+        "emperor": false,
+        "image_name": "image108",
+        "abilities": [
+            {
+                "name": "Amrita",
+                "description": "Once per main phase, you may choose two target heroes with equipment, if the difference between the number of equipment is less than X, exchange their equipment (X is your lost health)",
+                "emperor_ability": false
+            },
+            {
+                "name": "Ameliorate",
+                "description": "When a hero is on the brink of death, you may reveal a card from his hand, if that card is a non-basic card, discard it and he gain 1 health",
+                "emperor_ability": false
+            }
+        ]
+    },
+    {
+        "name": "Xu Sheng",
+        "title": "The Steel Barricade of Jiang Dong",
+        "alignment": "Wu",
+        "od": false,
+        "emperor": false,
+        "image_name": "image109",
+        "abilities": [
+            {
+                "name": "Breakthrough",
+                "description": "Whenever you play an \"Attack\" targeting a hero, you may set X cards from his hand or equipment zone aside (X is his current health). If you do, return the cards to his hand at the end of your turn",
+                "emperor_ability": false
+            }
+        ]
+    },
+    {
+        "name": "Yu Jin",
+        "title": "Mainstay of Wei Military",
+        "alignment": "Wei",
+        "od": false,
+        "emperor": false,
+        "image_name": "image110",
+        "abilities": [
+            {
+                "name": "Commander",
+                "description": "At the beginning of your turn, you may target a hero with the number of cards in hand greater than current health and discard  X cards in his hand or equipment zone (X is the difference between cards in hand and current health), then you choose one of the following:\nFor each non-equipment cards within the discarded card, you discard a card from hand or equipment zoneThat hero draw X cards",
+                "emperor_ability": false
+            }
+        ]
+    },
+    {
+        "name": "Zhang Chun Hua",
+        "title": "Cold-blooded Empress",
+        "alignment": "Wei",
+        "od": false,
+        "emperor": false,
+        "image_name": "image111",
+        "abilities": [
+            {
+                "name": "Heartless",
+                "description": "All damage dealt by you are consider as loss of health",
+                "emperor_ability": false
+            },
+            {
+                "name": "Bereavement",
+                "description": "Whenever you have less than X cards in your hand, draw until you have X cards (X is your lost health",
+                "emperor_ability": false
+            }
+        ]
+    },
+    {
+        "name": "Fa Zheng",
+        "title": "Supporter of Shu",
+        "alignment": "Shu",
+        "od": false,
+        "emperor": false,
+        "image_name": "image112",
+        "abilities": [
+            {
+                "name": "Reciprocation",
+                "description": "Whenever you gain 2 cards from another hero, you may have that hero draw a card. Whenever you are dealt damage, for each damage, the damage source choose one of the following:\nGive you a card in their handLose 1 health",
+                "emperor_ability": false
+            },
+            {
+                "name": "Dazzle",
+                "description": "During your drawing phase, you may skip your draw and target another hero to draw 2 cards, then he play an \"Attack\" on another hero of your choice within his attack range . If he does not, take 2 cards from his hand.",
+                "emperor_ability": false
+            }
+        ]
+    },
+    {
+        "name": "Xu Shu",
+        "title": "The Loyal Gallant",
+        "alignment": "Shu",
+        "od": false,
+        "emperor": false,
+        "image_name": "image113",
+        "abilities": [
+            {
+                "name": "Silence",
+                "description": "If a tactics card you use cause you to deal damage, prevent that damage. Prevent all damage dealt to you by tactics card",
+                "emperor_ability": false
+            },
+            {
+                "name": "Recommendation",
+                "description": "At the end of your turn, you may discard a non-basic card from your hand or equipment zone and target another hero, that hero choose one of the following:\nDraw 2 cardsGain 1 healthFlip his hero card face up and untap it",
+                "emperor_ability": false
+            }
+        ]
+    },
+    {
+        "name": "Cao Zhang",
+        "title": "Yellow bearded General",
+        "alignment": "Wei",
+        "od": false,
+        "emperor": false,
+        "image_name": "image114",
+        "abilities": [
+            {
+                "name": "Versatile Fighter",
+                "description": "During your draw phase, you may skip your draw and choose 1 of the following:\nDraw 3 card, until the end of your turn you cannot play an \u201cAttack\u201d or discard an \u201cAttack\u201d in response to a card\u2019s effectDraw 1 card, until end of your turn, you may use an additional \u201cAttack\u201d and ignore range requirement for your \u201cAttack\u201d",
+                "emperor_ability": false
+            }
+        ]
+    },
+    {
+        "name": "Xun You",
+        "title": "The Advisor of Wei",
+        "alignment": "Wei",
+        "od": false,
+        "emperor": false,
+        "image_name": "image115",
+        "abilities": [
+            {
+                "name": "Contrivance",
+                "description": "Once per main phase, you may use all your cards in your hand as any non-delay tactics card",
+                "emperor_ability": false
+            },
+            {
+                "name": "Playing Dumb",
+                "description": "Whenever you are dealt damage, you may draw a card and reveal your hand, if all cards in your hand are of the same colour, the source of damage discard a card from his hand.",
+                "emperor_ability": false
+            }
+        ]
+    },
+    {
+        "name": "Zhong Hui",
+        "title": "The Audacious Schemer",
+        "alignment": "Wei",
+        "od": false,
+        "emperor": false,
+        "image_name": "image116",
+        "abilities": [
+            {
+                "name": "Ambition",
+                "description": "Whenever you are dealt damage, for each damage you received, you may draw a card then put a card in your hand onto your hero card as \"Power\". Your hand size is increased by X (X is the number of \"Power\" on your hero card)",
+                "emperor_ability": false
+            },
+            {
+                "name": "Insurrection",
+                "description": "(Awakening Ability) At the beginning of your upkeep, if you have 3 or more \"Power\", you gain 1 health or draw 2 cards, then reduce your max health by 1 and gain \"Eradicate\"",
+                "emperor_ability": false
+            },
+            {
+                "name": "Eradicate",
+                "description": "Once per main phase , you may discard a \"Power\" and choose a hero, he draw 2 cards. Then if his number of cards in hand is greater than yours, you deal 1 damage to him",
+                "emperor_ability": false
+            }
+        ]
+    },
+    {
+        "name": "Wang Yi",
+        "title": "The Elated Heroine",
+        "alignment": "Wei",
+        "od": false,
+        "emperor": false,
+        "image_name": "image117",
+        "abilities": [
+            {
+                "name": "Chastity",
+                "description": "Whenever you become the target of \"Attack\" or non-delay tactics card played by a hero, you may lose 1 health. If you do, ignore the effect of that card on you and you discard a card from that hero's hand or equipment zone",
+                "emperor_ability": false
+            },
+            {
+                "name": "Secret Plan",
+                "description": "At the end of your turn, you may draw X cards, then may give X cards in your hand to another hero (X is the amount of Life you have lost.)",
+                "emperor_ability": false
+            }
+        ]
+    },
+    {
+        "name": "Liao Hua",
+        "title": "Veteran who have go through the Vicissitudes of Life",
+        "alignment": "Shu",
+        "od": false,
+        "emperor": false,
+        "image_name": "image118",
+        "abilities": [
+            {
+                "name": "Vanguard",
+                "description": "(Passive) At the beginning of your turn, you gain an extra main phase.",
+                "emperor_ability": false
+            },
+            {
+                "name": "Aspirations",
+                "description": "(Limited Ability) When you are on the brink of death, you may gain X health (X is the number of factions in play). If you do, flip your hero card.",
+                "emperor_ability": false
+            }
+        ]
+    },
+    {
+        "name": "Guan Xing & Zhang Bao",
+        "title": "Cubs of the Generals",
+        "alignment": "Shu",
+        "od": false,
+        "emperor": false,
+        "image_name": "image119",
+        "abilities": [
+            {
+                "name": "Paternal Souls",
+                "description": "During your main phase, you may use 2 cards in your hand as \"Attack\". If this \"Attack\" deals damage, you gain \"Saint Warrior\" and \"Roar\" until the end of turn",
+                "emperor_ability": false
+            },
+            {
+                "name": "Saint Warrior",
+                "description": "Refer to Guan Yu",
+                "emperor_ability": false
+            },
+            {
+                "name": "Roar",
+                "description": "Refer to Zhang Fei",
+                "emperor_ability": false
+            }
+        ]
+    },
+    {
+        "name": "Ma Dai",
+        "title": "Entrusted during Crisis",
+        "alignment": "Shu",
+        "od": false,
+        "emperor": false,
+        "image_name": "image120",
+        "abilities": [
+            {
+                "name": "Horsemanship",
+                "description": "Your range with other heroes is always reduced by 1",
+                "emperor_ability": false
+            },
+            {
+                "name": "Sneak Attack",
+                "description": "At the beginning of your turn, you may draw a card then discard a card. If you do, you choose a hero within your range and he cannot play or discard cards with the same color as your discarded card.",
+                "emperor_ability": false
+            }
+        ]
+    },
+    {
+        "name": "Bu Lian Shi",
+        "title": "The Uncrowned Queen",
+        "alignment": "Wu",
+        "od": false,
+        "emperor": false,
+        "image_name": "image121",
+        "abilities": [
+            {
+                "name": "Pacify",
+                "description": "Once per main phase, you may choose 2 heroes with different number of cards in hand, then the hero with less cards in hand draw a card from the one with more cards in hand and reveal it. If the revealed card is not SPADES, you draw a card.",
+                "emperor_ability": false
+            },
+            {
+                "name": "Reminiscence",
+                "description": "When you are dead, you may choose a hero other than the killer, that hero draws 3 cards and gain 1 Health",
+                "emperor_ability": false
+            }
+        ]
+    },
+    {
+        "name": "Cheng Pu",
+        "title": "Loyalist of Three Generations",
+        "alignment": "Wu",
+        "od": false,
+        "emperor": false,
+        "image_name": "image122",
+        "abilities": [
+            {
+                "name": "Plague Fire",
+                "description": "Whenever you use a normal \"Attack\", you may treat this \"Attack\" as \"Fire Attack\". If this attack deals damage, you lose 1 Health. Your \"Fire Attack\" can target an additional hero.",
+                "emperor_ability": false
+            },
+            {
+                "name": "Superior Vintage",
+                "description": "At the end of your turn, if you have no \"Vintage\" and your hero card, you may put any number of \"Attack\" onto your hero card as \"Vintage\". Whenever a hero is on the brink of death, you may discard a \"Vintage\". If you do, that hero is considered to have used a \"Wine\"",
+                "emperor_ability": false
+            }
+        ]
+    },
+    {
+        "name": "Han Dang",
+        "title": "Marquis of the Stone City",
+        "alignment": "Wu",
+        "od": false,
+        "emperor": false,
+        "image_name": "image123",
+        "abilities": [
+            {
+                "name": "Mounted Archer",
+                "description": "Once per main phase, you may discard a card from your hand or equipment zone, if you do, your attack range is infinity until the end of turn. If the discarded card is an equipment card, you may discard a card from another hero's hand or equipment zone.",
+                "emperor_ability": false
+            },
+            {
+                "name": "Problem Solve",
+                "description": "(Limited Ability) During your main phase, you may choose a target hero. All heroes that can attack target hero must choose one:\nDiscard a weapon cardTarget hero draws a card",
+                "emperor_ability": false
+            }
+        ]
+    },
+    {
+        "name": "Liu Biao",
+        "title": "Ruler of Jiang Nan",
+        "alignment": "Kingdomless",
+        "od": false,
+        "emperor": false,
+        "image_name": "image124",
+        "abilities": [
+            {
+                "name": "Self-Preservation",
+                "description": "During your draw phase, you may draw additional X cards, if you do, cards you play this turn cannot target other heroes. (X is the number of factions in play)",
+                "emperor_ability": false
+            },
+            {
+                "name": "House of Royalty",
+                "description": "(Passive) Your hand size is increased by X. (X is the number of factions in play)",
+                "emperor_ability": false
+            }
+        ]
+    },
+    {
+        "name": "Cao Chong",
+        "title": " The Benevolent Child Prodigy",
+        "alignment": "Wei",
+        "od": false,
+        "emperor": false,
+        "image_name": "image125",
+        "abilities": [
+            {
+                "name": "Weight the Elephant",
+                "description": "Whenever you are dealt damage, for ach damage, reveal the top 4 cards of the deck, you put any number of cards with the rank total less than or equal to 13 into your hand",
+                "emperor_ability": false
+            },
+            {
+                "name": "Benevolence",
+                "description": "Whenever another hero is dealt damage, if his current health is 1, you can flip your hero card and discard an equipment card, then prevent this damage",
+                "emperor_ability": false
+            }
+        ]
+    },
+    {
+        "name": "Guo Huai",
+        "title": "The Governor of West",
+        "alignment": "Wei",
+        "od": false,
+        "emperor": false,
+        "image_name": "image126",
+        "abilities": [
+            {
+                "name": "Refined Strategy",
+                "description": "At the end of main phase, if the number of cards you have used is greater than your health, you may draw 2 cards",
+                "emperor_ability": false
+            }
+        ]
+    },
+    {
+        "name": "Man Chong",
+        "title": "The Political and Military Strategist",
+        "alignment": "Wei",
+        "od": false,
+        "emperor": false,
+        "image_name": "image127",
+        "abilities": [
+            {
+                "name": "Torture",
+                "description": "Once per main phase, you may discard any number of cards in hand and target another hero, he must choose one:\nDiscard a card with a different type to your discarded cards from hand or equipment zone.Flip his hero card and draw that many cards that you have discarded",
+                "emperor_ability": false
+            },
+            {
+                "name": "Defensive Strategy",
+                "description": "Whenever you are dealt damage, you may reveal a card from your hand. The source of damage must discard a card from hand or equipment zone which have a different type to the revealed card. If he does not, you gain 1 Health.",
+                "emperor_ability": false
+            }
+        ]
+    },
+    {
+        "name": "Guan Ping",
+        "title": "Son of the Saint Warrior",
+        "alignment": "Shu",
+        "od": false,
+        "emperor": false,
+        "image_name": "image128",
+        "abilities": [
+            {
+                "name": "Dragon Roar",
+                "description": "Whenever a hero play an \"Attack\" during their main phase, you may discard a card from hand or equipment zone. If you do, that \"Attack\" does not count towards the turn limit of \"Attack\". If that \"Attack\" is red, you draw a card",
+                "emperor_ability": false
+            }
+        ]
+    },
+    {
+        "name": "Jian Yong",
+        "title": "The Uninhibited Advisor",
+        "alignment": "Shu",
+        "od": false,
+        "emperor": false,
+        "image_name": "image129",
+        "abilities": [
+            {
+                "name": "Fine Words",
+                "description": "At the beginning of main phase, you may clash with another hero. If you win, the next basic or non-delay tactics cards can choose 1 additional or 1 less target. If you did not win, you cannot use tactics card until the end of turn.",
+                "emperor_ability": false
+            },
+            {
+                "name": "Indulgence",
+                "description": "Whenever you win a clash, you may put the card with larger rank back to your hand, whenever you did not win a clash, you may put your clash card back to your hand",
+                "emperor_ability": false
+            }
+        ]
+    },
+    {
+        "name": "Liu Feng",
+        "title": "The Tragic Foster son",
+        "alignment": "Shu",
+        "od": false,
+        "emperor": false,
+        "image_name": "image130",
+        "abilities": [
+            {
+                "name": "Framed",
+                "description": "At the beginning of your turn, you may choose up to 2 target heroes. Put one card from each hero's hand or equipment zone onto your hero card as \"Betrayal\". Whenever a playerneed to play an \"Attack\" on you, they can discard 2 \"Betrayal\" instead.",
+                "emperor_ability": false
+            }
+        ]
+    },
+    {
+        "name": "Pan Zhang & Ma Zhong",
+        "title": "The Nightmare of Ace",
+        "alignment": "Wu",
+        "od": false,
+        "emperor": false,
+        "image_name": "image131",
+        "abilities": [
+            {
+                "name": "Seize Weapon",
+                "description": "Whenever you are dealt damage by an \"Attack\", you may discard a card from hand or equipment zone. If you do, put target weapon in the damage source's equipment zone into your hand.",
+                "emperor_ability": false
+            },
+            {
+                "name": "Backstab",
+                "description": "(Passive) Whenever you deal damage to target hero with an \"Attack\", if you are not within his attack range, this \"Attack\" deals 1 additional damage.",
+                "emperor_ability": false
+            }
+        ]
+    },
+    {
+        "name": "Yu Fan",
+        "title": "The unrestrained and honest advisor",
+        "alignment": "Wu",
+        "od": false,
+        "emperor": false,
+        "image_name": "image132",
+        "abilities": [
+            {
+                "name": "Seek Knowledge",
+                "description": "Whenever you discard your cards, you may put any number of them on top of the deck.",
+                "emperor_ability": false
+            },
+            {
+                "name": "Blunt words",
+                "description": "At the end of your turn, you may target a hero. He draws a card and reveals it. If that card is an equipment card, he plays that card and gain 1 Life.",
+                "emperor_ability": false
+            }
+        ]
+    },
+    {
+        "name": "Zhu Ran",
+        "title": "The patient commander",
+        "alignment": "Wu",
+        "od": false,
+        "emperor": false,
+        "image_name": "image133",
+        "abilities": [
+            {
+                "name": "Courage",
+                "description": "During your main phase, you may discard X cards and target another hero within your attack range (X is the number of times of \"Courage\" you have used during this main phase, then trigger the following accordingly. If X is:\n1 - You discard a card in target hero\u2019s hand, equipment or judgment zone2 - Target hero give you a card in hand or equipment zone to you and put it into your hand3 - You deal 1 damage to target hero4 - You and target hero draw 2 cards",
+                "emperor_ability": false
+            }
+        ]
+    },
+    {
+        "name": "Empress Fu",
+        "title": "Stand aloof from affairs",
+        "alignment": "Kingdomless",
+        "od": false,
+        "emperor": false,
+        "image_name": "image134",
+        "abilities": [
+            {
+                "name": "Anxious Fear",
+                "description": "At the beginning of other heroes' turn, if you are damaged, you may clash with him. If you win, whenever he plays a card this turn, he cannot target hero other than himself. If you did not win, his range with you becomes 1 until the end of turn.",
+                "emperor_ability": false
+            },
+            {
+                "name": "Plead for help",
+                "description": "Whenever you becomes the target of an \"Attack\", you may target another hero other than the attacker. He may give you a \"Dodge\", if he does not, he becomes the target of that \"Attack\" too",
+                "emperor_ability": false
+            }
+        ]
+    },
+    {
+        "name": "Li Ru",
+        "title": "Demonic Advisor",
+        "alignment": "Kingdomless",
+        "od": false,
+        "emperor": false,
+        "image_name": "image135",
+        "abilities": [
+            {
+                "name": "Annihilate",
+                "description": "At the end of your turn, you may deal 1 damage to target hero (Other than you) with no cards in hand",
+                "emperor_ability": false
+            },
+            {
+                "name": "Exterminate",
+                "description": "Once per main phase, you may put one black tactics card on top of the deck and target a hero with cards in hand, he either discard a tactics card, or discard 2 cards from his hand or equipment zone",
+                "emperor_ability": false
+            },
+            {
+                "name": "Burn the city",
+                "description": "(Limited ability) During your main phase, you may target every other hero. They must choose one according to turn order:\nDiscard at least X cards from hand or equipment zone (X is the number of cards that last player discarded + 1)You deal 2 fire damage to him",
+                "emperor_ability": false
+            }
+        ]
+    },
+    {
+        "name": "Cao Zhen",
+        "title": "The Pillar of Wei",
+        "alignment": "Wei",
+        "od": false,
+        "emperor": false,
+        "image_name": "image136",
+        "abilities": [
+            {
+                "name": "Defense Minister",
+                "description": "At the beginning of other heroes main phase, you may discard a card from your hand with the same color as one of your equipment, if you do, that hero cannot play or use any card with the same color. At the end of the main phase, if he has not play an \"Attack\", this is treated as you play an \"Attack\" on him.",
+                "emperor_ability": false
+            }
+        ]
+    },
+    {
+        "name": "Han Hao & Shi Huan",
+        "title": " Commander of Central Army",
+        "alignment": "Wei",
+        "od": false,
+        "emperor": false,
+        "image_name": "image137",
+        "abilities": [
+            {
+                "name": "Careful Decision",
+                "description": "Whenever your black basic card is discarded and put into a graveyard, you may play it as \"Rations depleted\" and ignore the range requirements",
+                "emperor_ability": false
+            },
+            {
+                "name": "Courageous Plan",
+                "description": "At the beginning of other heroes' judgment phase, you may discard a card in his judgment zone. If you do, treat this as you have played an \"Attack\" on him. If this \"Attack\" does not deal damage, you may draw a card",
+                "emperor_ability": false
+            }
+        ]
+    },
+    {
+        "name": "Chen Qun",
+        "title": "The Role Model of all Courtiers",
+        "alignment": "Wei",
+        "od": false,
+        "emperor": false,
+        "image_name": "image138",
+        "abilities": [
+            {
+                "name": "Rank Determination",
+                "description": "Once per main phase, you may discard a card from hand and target a damaged hero. He perform a judgement. (You cannot discard cards which have the same type to other cards you have played or discarded this turn):\nIf the result is black, he draw X cards (X is his lost heath) and you cannot use \u201cRank Determination\u201d on him againIf the result is red, you flip your hero card",
+                "emperor_ability": false
+            },
+            {
+                "name": "Justice and Mercy",
+                "description": "Whenever a hero flip or tap his hero card , you may let him draw a card",
+                "emperor_ability": false
+            }
+        ]
+    },
+    {
+        "name": "Wu Yi",
+        "title": "Cavalry of Shu",
+        "alignment": "Shu",
+        "od": false,
+        "emperor": false,
+        "image_name": "image139",
+        "abilities": [
+            {
+                "name": "Rapid Assault",
+                "description": "(Passive) Whenever you play a card during your turn, decrease your range with other heroes by 1. If your range with all other players is 1, you ignore another hero's armor and your \"Attack\" can target an additional hero.",
+                "emperor_ability": false
+            }
+        ]
+    },
+    {
+        "name": "Zhou Cang",
+        "title": "Shu Loyalist",
+        "alignment": "Shu",
+        "od": false,
+        "emperor": false,
+        "image_name": "image140",
+        "abilities": [
+            {
+                "name": "Loyalty and Bravery",
+                "description": "After your \"Attack\" is resolved, you may give this \"Attack\" card or \"Dodge\" played by defending hero to another target hero. A hero who received a red card through this may play an attack to target hero within your attack range.",
+                "emperor_ability": false
+            }
+        ]
+    },
+    {
+        "name": "Zhang Song",
+        "title": "Waiting for a worthy emperor",
+        "alignment": "Shu",
+        "od": false,
+        "emperor": false,
+        "image_name": "image141",
+        "abilities": [
+            {
+                "name": "Good memory",
+                "description": "At the start of your main phase, you may reveal a card from another hero's hand. Until the end of your turn, whenever you play a card with the same type as the revealed card, you draw a card.",
+                "emperor_ability": false
+            },
+            {
+                "name": "Map offering",
+                "description": "At the start of other heroes' main phase, you may draw 2 cards then give that hero 2 cards in your hand. At the end of the turn, if he did not kill any hero, you lose 1 health.",
+                "emperor_ability": false
+            }
+        ]
+    },
+    {
+        "name": "Sun Lu Ban",
+        "title": "Henchwoman",
+        "alignment": "Wu",
+        "od": false,
+        "emperor": false,
+        "image_name": "image142",
+        "abilities": [
+            {
+                "name": "Slander",
+                "description": "Once per main phase, when you play an \"Attack\" or black non-delay tactics card targeting a single hero, you may target another hero which can be the target of the card. He choose one of the following:\nGive you a card and become the source of the card you playBecome the target of the card you use.",
+                "emperor_ability": false
+            },
+            {
+                "name": "Arrogant",
+                "description": "Whenever you are dealt damage by a male hero, you may discard an equipment card and reduce that damage by 1.",
+                "emperor_ability": false
+            }
+        ]
+    },
+    {
+        "name": "Zhu Huan",
+        "title": "Defender of Chung Chou",
+        "alignment": "Wu",
+        "od": false,
+        "emperor": false,
+        "image_name": "image143",
+        "abilities": [
+            {
+                "name": "Feint",
+                "description": "At the end of your turn, you may force target hero to discard a card from your hand or equipment zone, if the discarded card is not \"Attack\", you may put a card from his hand, equipment or judgment zone into your hand.",
+                "emperor_ability": false
+            }
+        ]
+    },
+    {
+        "name": "Gu Yong",
+        "title": "Wu\u2019s Prime Minister",
+        "alignment": "Wu",
+        "od": false,
+        "emperor": false,
+        "image_name": "image144",
+        "abilities": [
+            {
+                "name": "Prudent",
+                "description": "During your main phase, you may discard 2 cards from your hand or equipment zone. If you do, draw a card. In the same spirit:\nAt the end of your turn, you may reveal your hand. If all the cards are the same color, you may choose X heroes and these heroes draw a card. (X is the number of cards in your hand.)",
+                "emperor_ability": false
+            }
+        ]
+    },
+    {
+        "name": "Ju Shou",
+        "title": "Military Schemer",
+        "alignment": "Kingdomless",
+        "od": false,
+        "emperor": false,
+        "image_name": "image145",
+        "abilities": [
+            {
+                "name": "Progressive Strategy",
+                "description": "Whenever you play a card during your main phase, if the card you play has the same rank or suit as the previous card you have played this turn, you may draw a card.",
+                "emperor_ability": false
+            },
+            {
+                "name": "Aiming the North",
+                "description": "(Passive) Whenever you received a damage, if that is the first time you received damage this turn, you gain 1 health, otherwise you lose 1 health.",
+                "emperor_ability": false
+            }
+        ]
+    },
+    {
+        "name": "Lady Cai",
+        "title": "Queen of Jin Zhou",
+        "alignment": "Kingdomless",
+        "od": false,
+        "emperor": false,
+        "image_name": "image146",
+        "abilities": [
+            {
+                "name": "Eavesdrop",
+                "description": "At the end of other heroes' turn, if they have not played a card that target heroes other than themselves this turn, you may choose one of the following:\nPut a card in his equipment zone into your equipment zone.Draw a card",
+                "emperor_ability": false
+            },
+            {
+                "name": "Cession",
+                "description": "(Limited Ability) During your main phase, you may give all cards in your equipment zone to another hero, then he choose 1 of the following:\nYou gain X healthDeal 1 damage to X target heroes within his attack range(X is the number of cards you give to him)Overknight Fame 2015",
+                "emperor_ability": false
+            }
+        ]
+    },
+    {
+        "name": "Cao Rui",
+        "title": "The Talented Emperor",
+        "alignment": "Wei",
+        "od": false,
+        "emperor": true,
+        "image_name": "image147",
+        "abilities": [
+            {
+                "name": "Restoration",
+                "description": "Whenever you are dealt damage, you may target a hero and he performs a judgment, if the result is red, he gain 1 health; if the result is black, he draw X cards (X is the amount of damage dealt)",
+                "emperor_ability": false
+            },
+            {
+                "name": "Eagle Eye",
+                "description": "Once per main phase, you may give all cards in your hand to another hero. If you do, his hand size is increased by 1 and can use an additional \"Attack\" until the end of his next turn.",
+                "emperor_ability": false
+            },
+            {
+                "name": "Boom and Bust",
+                "description": "(Emperor Ability, Limited ability) When you are on the brink of death, other Wei heroes may choose to let you gain 1 health. If they choose to gain your health, they receive 1 damage after the brink of death is resolved.",
+                "emperor_ability": true
+            }
+        ]
+    },
+    {
+        "name": "Cao Xiu",
+        "title": "The Talented Cavalry",
+        "alignment": "Wei",
+        "od": false,
+        "emperor": false,
+        "image_name": "image148",
+        "abilities": [
+            {
+                "name": "Swift Horse",
+                "description": "(Passive) Your range with other heroes are reduced by X (X is your lost health)",
+                "emperor_ability": false
+            },
+            {
+                "name": "Flanking",
+                "description": "Whenever your \"Attack\" deals damage to target hero, if you equipped a weapon, you may ask target hero to choose one:\nDiscard X cards from hand (X is the attack range of the weapon), then discard the weapon cardIncrease the damage of this \u201cAttack\u201d by 1",
+                "emperor_ability": false
+            }
+        ]
+    },
+    {
+        "name": "Zhong Yao",
+        "title": "The Creator of Block Calligraphy",
+        "alignment": "Wei",
+        "od": false,
+        "emperor": false,
+        "image_name": "image149",
+        "abilities": [
+            {
+                "name": "Calligraphy Master",
+                "description": "Whenever you need to play a basic card, you may put a black non-basic card on top of the library and treat this as playing that basic card. (You cannot use this ability to play a card that you have already played this turn)",
+                "emperor_ability": false
+            },
+            {
+                "name": "Formulate",
+                "description": "Whenever a hero play a black card targeting at least one hero during their main phase, you may let one of the targets draw a card.",
+                "emperor_ability": false
+            }
+        ]
+    },
+    {
+        "name": "Liu Chen",
+        "title": "The Patriotic Noble",
+        "alignment": "Shu",
+        "od": false,
+        "emperor": true,
+        "image_name": "image150",
+        "abilities": [
+            {
+                "name": "Do or Die",
+                "description": "During your main phase, you may discard all cards in your hand and treat this as playing \"Duel\", then after the duel is resolved you and the loser of the duel draw a card. If you drew 2 or more cards via this effect during this phase, you lost \"Do or Die\" until the end of turn",
+                "emperor_ability": false
+            },
+            {
+                "name": "Save the Emperor",
+                "description": "(Emperor Ability) You may discard a card to use \"Rouse\", Hero who used an \"Attack\" to response this \"Rouse\" draw a card.",
+                "emperor_ability": true
+            }
+        ]
+    },
+    {
+        "name": "Xiahou Shi",
+        "title": "Whispering beauty",
+        "alignment": "Shu",
+        "od": false,
+        "emperor": false,
+        "image_name": "image151",
+        "abilities": [
+            {
+                "name": "Gather Firewood",
+                "description": "At the end of other heroes turn, if you and him have the same number of cards in hand, you may choose to let both of you draw a card.",
+                "emperor_ability": false
+            },
+            {
+                "name": "Words of Swallow",
+                "description": "During your main phase, you may recast \"Attack\". At the end of your main phase, if you recast 2 or more \"Attack\", you may target a male hero and he draws 2 cards.",
+                "emperor_ability": false
+            }
+        ]
+    },
+    {
+        "name": "Zhang Yi",
+        "title": "Minority Soldier of Shu",
+        "alignment": "Shu",
+        "od": false,
+        "emperor": false,
+        "image_name": "image152",
+        "abilities": [
+            {
+                "name": "Pacifying Barbarians",
+                "description": "Once per main phase, you and target hero may reveal a card at the same time. If you reveal an \"Attack\" and he did not reveal a \"Dodge\": You discard the \"Attack\" and deal 1 damage to him\". If you did not reveal an \"Attack\" and he reveals a \"Dodge\": You discard your revealed card and put a card from his hand or equipment zone into your hand",
+                "emperor_ability": false
+            },
+            {
+                "name": "Resolution",
+                "description": "(Passive) If your current health is 1, your \"Dodge\" are treated as \"Attack\"",
+                "emperor_ability": false
+            }
+        ]
+    },
+    {
+        "name": "Sun Xiu",
+        "title": "The emperor who tries to save the country",
+        "alignment": "Wu",
+        "od": false,
+        "emperor": true,
+        "image_name": "image153",
+        "abilities": [
+            {
+                "name": "Hostile Banquet",
+                "description": "Once per main phase, you may target another hero and he choose one of the following:\nYou put all equipment of target hero into your hand, then you lose \u201cHostile Banquet\u201dTarget hero discard a card from his hand or equipment zone.",
+                "emperor_ability": false
+            },
+            {
+                "name": "Vitalizing Education",
+                "description": "At the end of your turn, you may choose X target heroes. They draw a card then put a card from their hand on top of the library. (X is your current health). If you have lost \"Hostile Banquet\", X is your max health instead.",
+                "emperor_ability": false
+            },
+            {
+                "name": "Bound by orders",
+                "description": "(Emperor Ability, Passive) Heroes within your range are treat as within attack range of other Wu heroes.",
+                "emperor_ability": true
+            }
+        ]
+    },
+    {
+        "name": "Zhu Zhi",
+        "title": "General of National Stability",
+        "alignment": "Wu",
+        "od": false,
+        "emperor": false,
+        "image_name": "image154",
+        "abilities": [
+            {
+                "name": "Stabilize the country",
+                "description": "Once per main phase, you may return target equipment to its controller hand, If the controller's attack range is reduced because of this effect, you draw a card.",
+                "emperor_ability": false
+            }
+        ]
+    },
+    {
+        "name": "Quan Cong",
+        "title": "The greedy noble",
+        "alignment": "Wu",
+        "od": false,
+        "emperor": false,
+        "image_name": "image155",
+        "abilities": [
+            {
+                "name": "Seeking Fame",
+                "description": "Once per every heroes' turn, whenever you deal or was dealt damage, you may choose one of the following:\nDiscard a card from target hero\u2019s hand. That hero must have more cards in hand than you.Target hero draws a card. That hero must have less cards in hand than you.",
+                "emperor_ability": false
+            }
+        ]
+    },
+    {
+        "name": "Gongsun Yuan",
+        "title": "The Shady Warlord",
+        "alignment": "Kingdomless",
+        "od": false,
+        "emperor": false,
+        "image_name": "image156",
+        "abilities": [
+            {
+                "name": "Disloyalty",
+                "description": "Once per main phase, you may reveal all cards in your hand. If they are not the same color, you discard all cards of one color, then choose X target heroes and put a card from their hand or equipment zone into your hand. (X is the number of cards you discarded.) If you put 2 or more cards into your hand, you lose 1 health.",
+                "emperor_ability": false
+            }
+        ]
+    },
+    {
+        "name": "Guo Tu & Feng Ji",
+        "title": "The Ferocious Dual",
+        "alignment": "Kingdomless",
+        "od": false,
+        "emperor": false,
+        "image_name": "image157",
+        "abilities": [
+            {
+                "name": "Reckless Assault",
+                "description": "At the beginning of main phase, you may draw 2 cards. If you do, your hand size becomes X this turn. (X is the amount of damage you deal this turn.)",
+                "emperor_ability": false
+            },
+            {
+                "name": "Cover up",
+                "description": "Whenever you need to play or use a \"Dodge\", you may choose to let the current turn hero to draw a card, then if he is not the hero with the largest number of cards in hand, you discard a card from a hero's hand (That hero needs to be the one with the largest number of cards in hand.) Treat this as you play or use a \"Dodge\"",
+                "emperor_ability": false
+            }
+        ]
+    },
+    {
+        "name": "Empress Guo",
+        "title": "The Undefiled Queen",
+        "alignment": "Wei",
+        "od": false,
+        "emperor": false,
+        "image_name": "image158",
+        "abilities": [
+            {
+                "name": "Forging Edict",
+                "description": "Once per main phase, you may reveal a card in your hand, and then target a hero closest to you. He announces a basic card name and until the end of your turn, you may treat the revealed card as the announced card. (You cannot be the target of the announced card.)",
+                "emperor_ability": false
+            },
+            {
+                "name": "Brain racking",
+                "description": "Whenever you are dealt damage, you may draw a card or upgrade \"Forging Edict\" (Max 2 times):\nUpgrade 1 - The target player can announce a basic card or non- delay Tactics card nameUpgrade 2 - Once per main phase, you may treat a card in your hand as any basic or non-delay tactics card. (You cannot be the target of the announced card.)",
+                "emperor_ability": false
+            }
+        ]
+    },
+    {
+        "name": "Sun Zi & Liu Fang",
+        "title": "The Dual who speaks with forked tongue",
+        "alignment": "Wei",
+        "od": false,
+        "emperor": false,
+        "image_name": "image159",
+        "abilities": [
+            {
+                "name": "Bluffing",
+                "description": "During discard phase, if you discarded at least 2 cards of different suits, you may gain 1 health or draw a card.",
+                "emperor_ability": false
+            },
+            {
+                "name": "Flattery",
+                "description": "Once per hero per main phase, if you have a card that you can play in your hand, you may target a hero and he discard a card from his hand, then you cannot play a card with the same suit as the discarded card this turn. If the discarded card is SPADES, you flip your hero card and lose 1 health.",
+                "emperor_ability": false
+            }
+        ]
+    },
+    {
+        "name": "Li Yan",
+        "title": "Shu Rations Officer",
+        "alignment": "Shu",
+        "od": false,
+        "emperor": false,
+        "image_name": "image160",
+        "abilities": [
+            {
+                "name": "Rations Management",
+                "description": "Once per main phase, you may put a card in another hero's hand into your hand, then you choose one of the following:\nHe look at the top 2 cards of the library, then reveal all basic cards and put them into his hand.During his next draw phase, he draws an additional card.",
+                "emperor_ability": false
+            },
+            {
+                "name": "Insidious",
+                "description": "(Passive) During your discard phase, cards you put into your hand this turn does not count towards the hand limit.",
+                "emperor_ability": false
+            }
+        ]
+    },
+    {
+        "name": "Huang Hao",
+        "title": "The Trickery Eunuch",
+        "alignment": "Shu",
+        "od": false,
+        "emperor": false,
+        "image_name": "image161",
+        "abilities": [
+            {
+                "name": "Emperor\u2019s Crony",
+                "description": "At the end of your turn, you may target a hero who can attack the emperor. You discard a card from his hand or equipment zone, and then he draws a card. If he has more cards in hand then the emperor, you draw a card.",
+                "emperor_ability": false
+            },
+            {
+                "name": "Bribery",
+                "description": "Once per hero, whenever you are dealt damage by another hero, you may reveal X cards in your hand and he choose one of the following:\nPut one of the cards into his hand and prevent that damage.Discard X cards from his hand or equipment zone.",
+                "emperor_ability": false
+            }
+        ]
+    },
+    {
+        "name": "Sun Deng",
+        "title": "The talented and virtuous crown prince",
+        "alignment": "Wu",
+        "od": false,
+        "emperor": false,
+        "image_name": "image162",
+        "abilities": [
+            {
+                "name": "Rectify",
+                "description": "Once per main phase, you may target another hero. That hero may put up to 3 cards (At least 1) from his hand or equipment zone onto your hero card as \"Rectification\". If he does, at the beginning of your next turn, you put all \"Rectification\" into your hand and that hero draws that many cards.",
+                "emperor_ability": false
+            }
+        ]
+    },
+    {
+        "name": "Cen Hun",
+        "title": "The Eunuch who ordered national isolation",
+        "alignment": "Wu",
+        "od": false,
+        "emperor": false,
+        "image_name": "image163",
+        "abilities": [
+            {
+                "name": "Extravagant",
+                "description": "During main phase, if your hand limit is greater than 0, you may draw a card then reduce your hand limit this turn by 1. At the end of your turn, if you have no cards in your hand, you may tap up to X hero cards. (X is your current health)",
+                "emperor_ability": false
+            },
+            {
+                "name": "Chain of Disasters",
+                "description": "(Passive) Whenever you are dealt fire damage, if your hero card is tapped and you are the first hero among the chained heroes to receive the damage, this damage is increased by 1",
+                "emperor_ability": false
+            }
+        ]
+    },
+    {
+        "name": "Liu Yu",
+        "title": "The Benevolent Ruler",
+        "alignment": "Kingdomless",
+        "od": false,
+        "emperor": false,
+        "image_name": "image164",
+        "abilities": [
+            {
+                "name": "Peacekeeping",
+                "description": "Once per main phase, if the number of cards in your hand is greater than your current health, you may target a hero who can attack you. Unless he plays an \"Attack\" on you, He gives a card in his equipment zone to you.",
+                "emperor_ability": false
+            },
+            {
+                "name": "Ancestral Blessing",
+                "description": "(Passive) At the beginning of the game, you increase your max health and health by X (X is the number of factions in game). If all heroes of a faction are removed from the game, you reduce your max health by 1",
+                "emperor_ability": false
+            }
+        ]
+    },
+    {
+        "name": "Zhang Rang",
+        "title": "The Powerful Eunuch",
+        "alignment": "Kingdomless",
+        "od": false,
+        "emperor": false,
+        "image_name": "image165",
+        "abilities": [
+            {
+                "name": "Creating Chaos",
+                "description": "You may announce a basic card or non-delay tactics card name then play a card in your hand as that card. Then you cannot announce the same name for \"Creating Chaos\" for the rest of the game. After the card's effect is resolved, you target another hero and he choose one of the following:\nGive you a card from his hand or equipment zone which is not the same type as the announced card.You lose 1 health and cannot use \u201cCreating Chaos\u201d for the rest of the turn.",
+                "emperor_ability": false
+            }
+        ]
+    },
+    {
+        "name": "Liu Bei",
+        "title": "Hero Through Troubled Times",
+        "alignment": "Shu",
+        "od": true,
+        "emperor": true,
+        "image_name": "image166",
+        "abilities": [
+            {
+                "name": "Kindness",
+                "description": "Once per main phase, you may give any number of cards in your hand to another hero. Then that hero cannot receive any \"Kindness\" cards until the end of the turn. During your main phase, whenever you give out the second \"Kindness\" card, you may treat this as playing a basic card",
+                "emperor_ability": false
+            },
+            {
+                "name": "Rouse",
+                "description": "(Emperor Ability) Whenever you need to play or discard an \"Attack\", any other Shu heroes can play or discard for you",
+                "emperor_ability": true
+            }
+        ]
+    },
+    {
+        "name": "Guan Yu",
+        "title": "Bearded Gentleman",
+        "alignment": "Shu",
+        "od": true,
+        "emperor": false,
+        "image_name": "image167",
+        "abilities": [
+            {
+                "name": "Saint Warrior",
+                "description": "You may play or use any red cards from your hand or equipment zone as \"Attack\"",
+                "emperor_ability": false
+            },
+            {
+                "name": "Disown",
+                "description": "Once per main phase, you may clash with another hero. If you win, that hero cannot play or use any cards in hand and he cannot use any non-passive ability until the end of the turn. If you did not win, you may let that hero to gain 1 health.",
+                "emperor_ability": false
+            }
+        ]
+    },
+    {
+        "name": "Zhang Fei",
+        "title": "A match for ten thousand warriors",
+        "alignment": "Shu",
+        "od": true,
+        "emperor": false,
+        "image_name": "image168",
+        "abilities": [
+            {
+                "name": "Roar",
+                "description": "You may play any number of \"Attack\" during your turn",
+                "emperor_ability": false
+            },
+            {
+                "name": "Substitute",
+                "description": "(Limited Ability) At the beginning of your turn, you may gain health until your current health is equal to the current health you have last turn. Then you draw X cards (X is the amount of health you gained)",
+                "emperor_ability": false
+            }
+        ]
+    },
+    {
+        "name": "Zhang Yun",
+        "title": "The Young General",
+        "alignment": "Shu",
+        "od": true,
+        "emperor": false,
+        "image_name": "image169",
+        "abilities": [
+            {
+                "name": "Dragon Courage",
+                "description": "You may play or use \" Attack\" as \" Dodge\" and vice versa",
+                "emperor_ability": false
+            },
+            {
+                "name": "Spear of the Cape",
+                "description": "Whenever you play or use a card outside of your turn, you may reveal the top card of the library, if the revealed card and the card you have used or played are the same type, you may give the revealed card to a hero. If they are not the same type, you may put the revealed card into the discard pile",
+                "emperor_ability": false
+            }
+        ]
+    },
+    {
+        "name": "Ma Chao",
+        "title": "Lone horseman that can outmatch a thousand troops",
+        "alignment": "Shu",
+        "od": true,
+        "emperor": false,
+        "image_name": "image170",
+        "abilities": [
+            {
+                "name": "Horsemanship",
+                "description": "Your range with other heroes is always reduced by 1",
+                "emperor_ability": false
+            },
+            {
+                "name": "Iron Calvary",
+                "description": "Whenever you play an \"Attack\" on a hero, you may have that hero lose all non-passive abilities until the end of the turn and perform a judgment, unless that hero discard a card with the same suit as the judgment card, the \"Attack\" cannot be responded by \"Dodge\"",
+                "emperor_ability": false
+            }
+        ]
+    },
+    {
+        "name": "Xu Shu",
+        "title": "Swords to Plowshores",
+        "alignment": "Shu",
+        "od": true,
+        "emperor": false,
+        "image_name": "image171",
+        "abilities": [
+            {
+                "name": "Punishment",
+                "description": "At the end of other heroes turn, if that hero has dealt damage this turn, you may play an \"Attack\" on him.",
+                "emperor_ability": false
+            },
+            {
+                "name": "Concentrate",
+                "description": "(Limited Ability) Whenever you dealt damage, if you are damaged, you reduce your max health by 1, then gain \" Suggestion\"",
+                "emperor_ability": false
+            },
+            {
+                "name": "Suggestion",
+                "description": "Once per main phase, you may announce a card type or a color, then reveal cards from the top of the library until a revealed card match the announcement, then you may give that card to a male hero. Discard all other revealed cards.)",
+                "emperor_ability": false
+            }
+        ]
+    },
+    {
+        "name": "Gan Ning",
+        "title": "Pirate with Silk Sails",
+        "alignment": "Wu",
+        "od": true,
+        "emperor": false,
+        "image_name": "image172",
+        "abilities": [
+            {
+                "name": "Surprise Raid",
+                "description": "During your main phase, you may play any black cards in your hand and equipment zone as \"Burn Bridges\"",
+                "emperor_ability": false
+            },
+            {
+                "name": "Prestige",
+                "description": "(Limited Ability) Whenever a tactics card target 2 or more heroes, you may prevent any number of heroes to become the target of the card.",
+                "emperor_ability": false
+            }
+        ]
+    },
+    {
+        "name": "Lu Meng",
+        "title": "The Rising Underdog",
+        "alignment": "Wu",
+        "od": true,
+        "emperor": false,
+        "image_name": "image173",
+        "abilities": [
+            {
+                "name": "Self-Restraint",
+                "description": "If you did not play or discard any \"Attack\" during your main phase, you may skip your discard phase",
+                "emperor_ability": false
+            },
+            {
+                "name": "Diligence",
+                "description": "(Awakening Ability) At the beginning of your turn, if the number of cards in your hand is 3 or greater (2 or greater if there are more than 7 heroes in play) than the amount of health you have, you reduce your max health by 1 and gain \"Calculation\"",
+                "emperor_ability": false
+            },
+            {
+                "name": "Calculation",
+                "description": "Once per main phase, you may look at target hero's hand and reveal a HEARTS card, you may discard that card or put it on top of the library.",
+                "emperor_ability": false
+            }
+        ]
+    },
+    {
+        "name": "Huang Gai",
+        "title": "Sacrificing for the Country",
+        "alignment": "Wu",
+        "od": true,
+        "emperor": false,
+        "image_name": "image174",
+        "abilities": [
+            {
+                "name": "Sacrificial Injury",
+                "description": "Once per main phase, you may discard a card and lose 1 health.",
+                "emperor_ability": false
+            },
+            {
+                "name": "False Surrender",
+                "description": "(Passive) Whenever you lose 1 health, you draw 3 cards, then if it is your main phase, ignore range requirements for your red \"Attack\" , red \"Attack\" you play cannot be responded by \"Dodge\" and you may play an additional \"Attack\"",
+                "emperor_ability": false
+            }
+        ]
+    },
+    {
+        "name": "Zhou Yu",
+        "title": "Wu Viceroy",
+        "alignment": "Wu",
+        "od": true,
+        "emperor": false,
+        "image_name": "image175",
+        "abilities": [
+            {
+                "name": "Dashing Hero",
+                "description": "(Passive) During your drawing phase, draw an additional card. Your hand size is equal to your max health",
+                "emperor_ability": false
+            },
+            {
+                "name": "Sow Discord",
+                "description": "Once per main phase, you may reveal a card from your hand and give it to another hero. He choose one of the following:\nReveal all cards in his hand and discard all cards in his hand and equipment zone with the same color.He lose 1 health.",
+                "emperor_ability": false
+            }
+        ]
+    },
+    {
+        "name": "Da Qiao",
+        "title": "Reserved Beauty",
+        "alignment": "Wu",
+        "od": true,
+        "emperor": false,
+        "image_name": "image176",
+        "abilities": [
+            {
+                "name": "National Beauty",
+                "description": "Once per main phase, you may choose one of the following:\nTreat an play a \u2666 card in your hand or equipment zone as \u201cAcedia\u201dDiscard a \u2666 card in your hand or equipment zone and then discard an \u201cAcedia\u201d in playAfter the choice has been made, you draw a card.",
+                "emperor_ability": false
+            },
+            {
+                "name": "Displace",
+                "description": "Whenever you became the target of an \"Attack\", you may discard a card from your hand or equipment zone. If you do, choose another target hero (except the attacker) within your attack range, that hero becomes the new target of the \"Attack\"",
+                "emperor_ability": false
+            }
+        ]
+    },
+    {
+        "name": "Lu Xun",
+        "title": "The meek scholar with Valiant talents",
+        "alignment": "Wu",
+        "od": true,
+        "emperor": false,
+        "image_name": "image177",
+        "abilities": [
+            {
+                "name": "Humility",
+                "description": "Whenever a delayed tactics card in your judgment zone is triggered or you are targeted by a non-delay tactics card play by another hero, you may put all cards in your hand onto your hero card. At the end of your turn, return all the cards to your hand.",
+                "emperor_ability": false
+            },
+            {
+                "name": "One After Another",
+                "description": "Whenever you lose cards in your hand, if you have no cards in your hand, you may target X heroes and each of them draw a card. (X is the number of cards you have lost.)",
+                "emperor_ability": false
+            }
+        ]
+    },
+    {
+        "name": "Cao Cao",
+        "title": "Martial Emperor of Wei",
+        "alignment": "Wei",
+        "od": true,
+        "emperor": true,
+        "image_name": "image178",
+        "abilities": [
+            {
+                "name": "Villainous Hero",
+                "description": "Whenever you are dealt damage because of a card's effect, you may  put that card into your hand or draw a card",
+                "emperor_ability": false
+            },
+            {
+                "name": "Escort",
+                "description": "(Emperor Ability) Whenever you need to play or use a \"Dodge\", you may ask other Wei heroes to play or discard a \"Dodge\" for you",
+                "emperor_ability": true
+            }
+        ]
+    },
+    {
+        "name": "Sima Yi",
+        "title": "Ever Watchful Wolf",
+        "alignment": "Wei",
+        "od": false,
+        "emperor": false,
+        "image_name": "image179",
+        "abilities": [
+            {
+                "name": "Retaliation",
+                "description": "Whenever a hero deals damage to you, for each damage you have taken, you may put 1 card from his hand or equipment zone into your hand",
+                "emperor_ability": false
+            },
+            {
+                "name": "Demonic talent",
+                "description": "Whenever a judgment card is revealed, you may replace that card with a card with your hand or equipment zone",
+                "emperor_ability": false
+            }
+        ]
+    },
+    {
+        "name": "Xiahou Dun",
+        "title": "One-eyed warrior",
+        "alignment": "Wei",
+        "od": true,
+        "emperor": false,
+        "image_name": "image180",
+        "abilities": [
+            {
+                "name": "Staunch",
+                "description": "Whenever you are dealt damage, for each damage you have taken, you may perform a judgment. If the result is red, you deal 1 damage to the source of damage; if the result is black, you discard a card from his hand or equipment zone.",
+                "emperor_ability": false
+            },
+            {
+                "name": "Frugal",
+                "description": "Whenever you gain cards outside of your draw phase, you may put any number of them onto your hero card. At the end of a hero's turn, you may give these cards to him",
+                "emperor_ability": false
+            }
+        ]
+    },
+    {
+        "name": "Zhang Liao",
+        "title": "General of the Vanguard",
+        "alignment": "Wei",
+        "od": true,
+        "emperor": false,
+        "image_name": "image181",
+        "abilities": [
+            {
+                "name": "Ambush",
+                "description": "During your draw phase, you may draw X cards less, then target X heroes with more cards in hand than you, you take a card from each target hero's hand and put them into your hand",
+                "emperor_ability": false
+            }
+        ]
+    },
+    {
+        "name": "Xu Chu",
+        "title": "Crazy Tiger",
+        "alignment": "Wei",
+        "od": true,
+        "emperor": false,
+        "image_name": "image182",
+        "abilities": [
+            {
+                "name": "Bare-chested",
+                "description": "You may skip your draw phase. If you do, reveal the top 3 cards of the library. Put all basic cards, \"Duel\" and weapon cards into your hand and discard the rest. Until the start of your next turn, Damage of your  \"Attack\" and \"Duel\" is increased by 1.",
+                "emperor_ability": false
+            }
+        ]
+    },
+    {
+        "name": "Guo Jia",
+        "title": "The Prophet with an early end",
+        "alignment": "Wei",
+        "od": true,
+        "emperor": false,
+        "image_name": "image183",
+        "abilities": [
+            {
+                "name": "Heaven\u2019s Envy",
+                "description": "Whenever your judgment is resolved, you may put that judgment card into your hand",
+                "emperor_ability": false
+            },
+            {
+                "name": "Bestowed Rouse",
+                "description": "Whenever you are dealt damage, for each damage you receive, draw 2 cards. Then you may set up to 2 cards in your hand on X target hero cards (Max of X is 2). At the beginning of those target heroes turn, they put the cards set by \"Bestowed Rouse\" into their hand.",
+                "emperor_ability": false
+            }
+        ]
+    },
+    {
+        "name": "Li Dian",
+        "title": "Understanding and Righteous",
+        "alignment": "Wei",
+        "od": true,
+        "emperor": false,
+        "image_name": "image184",
+        "abilities": [
+            {
+                "name": "Sincerity",
+                "description": "At the beginning of your draw phase. You may look at top 4 cards of the library. Put 2 cards on top of the library and the other cards to the bottom of the library.",
+                "emperor_ability": false
+            },
+            {
+                "name": "Not holding grudges",
+                "description": "Whenever you deal damage to or was dealt damage by another hero, for each damage, you may choose both of you drawing a card.",
+                "emperor_ability": false
+            }
+        ]
+    },
+    {
+        "name": "Hua Tuo",
+        "title": "Miracle Physician",
+        "alignment": "Kingdomless",
+        "od": true,
+        "emperor": false,
+        "image_name": "image185",
+        "abilities": [
+            {
+                "name": "Cure illness",
+                "description": "Once per main phase, you may choose any number of target heroes with different factions, then you may discard a card from both your hand or equipment zone and their hand or equipment zone. If a hero discarded a SPADES card this way, he draws a card.",
+                "emperor_ability": false
+            },
+            {
+                "name": "First Aid",
+                "description": "If it is not your turn, you may play red cards in your hand and equipment zone as \"Peach\"",
+                "emperor_ability": false
+            }
+        ]
+    },
+    {
+        "name": "Lu Bu",
+        "title": "Embodiment of Force",
+        "alignment": "Kingdomless",
+        "od": true,
+        "emperor": false,
+        "image_name": "image186",
+        "abilities": [
+            {
+                "name": "Matchless",
+                "description": "(Passive) If you are the source of an \"Attack\", the defending player need to respond with 2 \"Dodge\" instead of one to cancel. If you are involved in a duel, the other player needs to discard 2 \"Attack\" in response to your discarded \"Attack\"",
+                "emperor_ability": false
+            },
+            {
+                "name": "Mercenary",
+                "description": "Whenever \"Attack\" you played dealt damage to another hero, that hero may choose to let you gain a card from his hand or equipment zone. If he does, treat this as you play a \"Duel\" on another target hero of his choice.",
+                "emperor_ability": false
+            }
+        ]
+    },
+    {
+        "name": "Gong Sun Zan",
+        "title": "White Horse General",
+        "alignment": "Kingdomless",
+        "od": true,
+        "emperor": false,
+        "image_name": "image187",
+        "abilities": [
+            {
+                "name": "Fast and Furious",
+                "description": "Whenever your black \"Attack\" deals damage to another hero, you may discard a card in his equipment zone. If the discarded card is a mount card, you may put that into your hand.",
+                "emperor_ability": false
+            },
+            {
+                "name": "Follow the Virtue",
+                "description": "(Passive): If your current health is greater than 2, your distance with other heroes is reduced by 1; If your current health is 2 or less, your distance with other heroes is increased by 1.",
+                "emperor_ability": false
+            }
+        ]
+    }
+]

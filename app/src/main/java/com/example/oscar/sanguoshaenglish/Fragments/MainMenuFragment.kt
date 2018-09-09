@@ -32,5 +32,4 @@ class MainMenuFragment : Fragment() {
         btn_all_cards.setOnClickListener {  (activity as MainMenuActivity).showCardsFragment() }
     }
 
-
 }
