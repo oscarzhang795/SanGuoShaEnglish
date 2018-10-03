@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1022292026724",
+    "firebase_url": "https://sanguoshaenglish-ee5cf.firebaseio.com",
+    "project_id": "sanguoshaenglish-ee5cf",
+    "storage_bucket": "sanguoshaenglish-ee5cf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1022292026724:android:88be8c96e6838a0b",
+        "android_client_info": {
+          "package_name": "com.example.oscar.sanguoshaenglish"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1022292026724-bdr17lfac5ogncr1mkh7btl1b8ku2k0m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.oscar.sanguoshaenglish",
+            "certificate_hash": "af73bc2b6afe1f1a18ec2c2ccd0631c7eae85d37"
+          }
+        },
+        {
+          "client_id": "1022292026724-hi5thbq8t56tc3ek5tfb65qpi76jps0h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDLNz_aQi4gGLwA4CJCkDluS6uPhjsYC7w"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1022292026724-hi5thbq8t56tc3ek5tfb65qpi76jps0h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
