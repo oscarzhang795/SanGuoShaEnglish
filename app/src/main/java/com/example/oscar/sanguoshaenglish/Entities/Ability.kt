@@ -7,4 +7,10 @@ data class Ability(
         val description: String,
         @Json(name = "emperor_ability")
         val isEmperorAbility: Boolean
-)
+) {
+        constructor(): this("", "", false)
+
+        override fun toString(): String {
+               return name + " -" + "\n" + description
+        }
+}
