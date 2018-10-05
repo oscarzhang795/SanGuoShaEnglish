@@ -1,8 +1,12 @@
 package com.example.oscar.sanguoshaenglish.Entities
 
+import io.objectbox.annotation.Entity
+import io.objectbox.annotation.Id
 import java.lang.StringBuilder
 
+@Entity
 data class CharacterData(
+        @Id var id: Long = 0,
         val name: String,
         val title: String,
         val alignment: String,
@@ -11,7 +15,6 @@ data class CharacterData(
         val image_name: String,
         val abilities: List<Ability>
 ) {
-    constructor(): this("", "", "", false, false, "", emptyList())
 
     override fun toString(): String {
         val sb = StringBuilder()

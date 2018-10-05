@@ -1,33 +1,46 @@
 package com.example.oscar.sanguoshaenglish.Fragments
 
-import android.graphics.BitmapFactory
 import android.os.Bundle
+import android.provider.Settings
 import android.support.v4.app.Fragment
+import android.support.v7.recyclerview.R.attr.layoutManager
 import android.support.v7.widget.GridLayoutManager
 import android.support.v7.widget.RecyclerView
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageView
+import com.beust.klaxon.Klaxon
 import com.example.oscar.sanguoshaenglish.Activities.MainMenuActivity
 import com.example.oscar.sanguoshaenglish.Adapters.CharactersAdapter
-import com.example.oscar.sanguoshaenglish.Entities.Character
 import com.example.oscar.sanguoshaenglish.Entities.CharacterData
 import com.example.oscar.sanguoshaenglish.R
-import com.google.firebase.firestore.FirebaseFirestore
-import kotlinx.android.synthetic.main.fragment_characters.*
+import com.example.oscar.sanguoshaenglish.R.id.rv_char_list
+import com.example.oscar.sanguoshaenglish.SanGuoShaApplication
+import io.objectbox.Box
+import io.objectbox.kotlin.boxFor
+import kotlinx.coroutines.experimental.GlobalScope
+import kotlinx.coroutines.experimental.launch
+import kotlin.concurrent.thread
 
 
 class CharactersFragment : Fragment() {
     private lateinit var viewAdapter: RecyclerView.Adapter<*>
     private lateinit var viewManager: RecyclerView.LayoutManager
-    private val characterDataList = ArrayList<CharacterData>()
-    private val characterList = ArrayList<Character>()
-    private val dbReference = FirebaseFirestore.getInstance()
+    private lateinit var characterBox: Box<CharacterData>
+
+    val shuCharacters = ArrayList<CharacterData>()
+    val wuCharacters = ArrayList<CharacterData>()
+    val weiCharacters = ArrayList<CharacterData>()
+    val kingdomelesssCharacters = ArrayList<CharacterData>()
+    val allCharacters = ArrayList<CharacterData>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         (activity as MainMenuActivity).supportActionBar?.title = "Characters"
+        ((activity as MainMenuActivity).application as SanGuoShaApplication).boxStore.boxFor<CharacterData>()
+
+        loadJson()
     }
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
@@ -37,36 +50,37 @@ class CharactersFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        loadShuCharacters()
 
-        viewManager = GridLayoutManager(this.context, 3)
-        viewAdapter = CharactersAdapter(characterList, this.context!!)
-        rv_char_list.apply {
-            setHasFixedSize(true)
-            adapter = viewAdapter
-            layoutManager = viewManager
+//        viewManager = GridLayoutManager(this.context, 3)
+//        viewAdapter = CharactersAdapter(allCharacters, this.context!!)
+//        rv_char_list.apply {
+//            setHasFixedSize(true)
+//            adapter = viewAdapter
+//            layoutManager = viewManager
+//        }
+    }
+
+    private fun loadJson() {
+        val inputStream = this.resources.assets.open("characters.json")
+        val klaxon = Klaxon()
+
+        GlobalScope.launch {
+            val parsed = klaxon.parseArray<CharacterData>(inputStream)
+            parsed?.forEach { it: CharacterData ->
+                when(it.alignment){
+                    "Shu" -> shuCharacters.add(it)
+                    "Wei" -> weiCharacters.add(it)
+                    "Wu" -> wuCharacters.add(it)
+                    "Kingdomless" -> kingdomelesssCharacters.add(it)
+                }
+                characterBox.put(it)
+                allCharacters.add(it)
+            }
+            Log.i("Shu", shuCharacters.size.toString())
+            Log.i("Wei", weiCharacters.size.toString())
+            Log.i("Wu", wuCharacters.size.toString())
+            Log.i("Kingdomeless", kingdomelesssCharacters.size.toString())
         }
     }
-
-    fun loadShuCharacters() {
-        dbReference.collection("shucharacters").get()
-                .addOnCompleteListener {
-                    if (it.isSuccessful) {
-                        it.result.forEach { document -> characterDataList.add(document.toObject(CharacterData::class.java)) }
-                        characterDataList.forEach { characterData ->
-                            characterData.image_name
-                            val charImage = ImageView(context)
-                            charImage.setImageBitmap(BitmapFactory.decodeResource(resources, resources.getIdentifier(characterData.image_name, "drawable", context!!.packageName)))
-                            characterList.add(Character( characterData, resources.getIdentifier(characterData.image_name, "drawable", context!!.packageName)))
-                        }
-                        rv_char_list.apply {
-                            setHasFixedSize(true)
-                            adapter = viewAdapter
-                            layoutManager = viewManager
-                        }
-                    }
-                }
-    }
-
 
 }

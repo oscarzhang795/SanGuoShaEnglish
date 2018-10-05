@@ -1,17 +1,11 @@
 package com.example.oscar.sanguoshaenglish.Activities
 
-import android.graphics.BitmapFactory
 import android.os.Bundle
 import android.support.v4.app.FragmentManager
 import android.support.v4.app.FragmentTransaction
 import android.support.v7.app.AppCompatActivity
-import android.widget.ImageView
-import com.example.oscar.sanguoshaenglish.Entities.Character
-import com.example.oscar.sanguoshaenglish.Entities.CharacterData
 import com.example.oscar.sanguoshaenglish.Fragments.*
 import com.example.oscar.sanguoshaenglish.R
-import com.google.firebase.firestore.FirebaseFirestore
-import kotlinx.android.synthetic.main.fragment_characters.*
 
 class MainMenuActivity : AppCompatActivity() {
 
@@ -81,4 +75,6 @@ class MainMenuActivity : AppCompatActivity() {
         trans.action()
         trans.commit()
     }
+
+
 }
