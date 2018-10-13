@@ -1,5 +1,7 @@
 package com.example.oscar.sanguoshaenglish.Entities
 
+import com.example.oscar.sanguoshaenglish.AbilityConverter
+import io.objectbox.annotation.Convert
 import io.objectbox.annotation.Entity
 import io.objectbox.annotation.Id
 import java.lang.StringBuilder
@@ -13,6 +15,7 @@ data class CharacterData(
         val od: Boolean,
         val emperor: Boolean,
         val image_name: String,
+        @Convert(converter = AbilityConverter::class, dbType = String::class)
         val abilities: List<Ability>
 ) {
 

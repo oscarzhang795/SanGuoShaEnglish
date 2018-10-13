@@ -38,9 +38,9 @@ class CharactersFragment : Fragment() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         (activity as MainMenuActivity).supportActionBar?.title = "Characters"
-        characterBox = ((activity as MainMenuActivity).application as SanGuoShaApplication).boxStore.boxFor<CharacterData>()
+        characterBox = ((activity as MainMenuActivity).application as SanGuoShaApplication).boxStore.boxFor()
 
-//        loadJson()
+        loadJson()
         val testChara = characterBox.query().equal(CharacterData_.alignment, "WU").build().find()
 //        testChara.get(0).abilities.get(0).description
         Log.i("Ability name", testChara.get(0).abilities.get(0).description)
@@ -82,6 +82,8 @@ class CharactersFragment : Fragment() {
 //                }
                 Log.i("Image name", it.abilities[0].description)
                 characterBox.put(it)
+                val a = characterBox.query().equal(CharacterData_.id, it.id).build().findFirst()
+                Log.i("Image name", a!!.abilities[0].description)
                 allCharacters.add(it)
             }
             Log.i("Shu", shuCharacters.size.toString())
