@@ -4,14 +4,12 @@ import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.support.v7.widget.GridLayoutManager
 import android.support.v7.widget.RecyclerView
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.beust.klaxon.Klaxon
 import com.example.oscar.sanguoshaenglish.Activities.MainMenuActivity
 import com.example.oscar.sanguoshaenglish.Adapters.CharactersAdapter
-import com.example.oscar.sanguoshaenglish.Entities.Ability
 import com.example.oscar.sanguoshaenglish.Entities.Character
 import com.example.oscar.sanguoshaenglish.Entities.CharacterData
 import com.example.oscar.sanguoshaenglish.Entities.CharacterData_
@@ -25,29 +23,36 @@ import kotlinx.coroutines.experimental.launch
 
 
 class CharactersFragment : Fragment() {
+
     private lateinit var viewAdapter: RecyclerView.Adapter<*>
     private lateinit var viewManager: RecyclerView.LayoutManager
     private lateinit var characterBox: Box<CharacterData>
 
     val shuCharacters = ArrayList<Character>()
-    val wuCharacters = ArrayList<CharacterData>()
-    val weiCharacters = ArrayList<CharacterData>()
-    val kingdomelesssCharacters = ArrayList<CharacterData>()
-    val allCharacters = ArrayList<CharacterData>()
+    val wuCharacters = ArrayList<Character>()
+    val weiCharacters = ArrayList<Character>()
+    val kingdomlesssCharacters = ArrayList<Character>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         (activity as MainMenuActivity).supportActionBar?.title = "Characters"
         characterBox = ((activity as MainMenuActivity).application as SanGuoShaApplication).boxStore.boxFor()
 
-        loadJson()
-        val testChara = characterBox.query().equal(CharacterData_.alignment, "WU").build().find()
-//        testChara.get(0).abilities.get(0).description
-        Log.i("Ability name", testChara.get(0).abilities.get(0).description)
-//        testChara.forEach {
-//            shuCharacters.add(Character(it, resources.getIdentifier(it.image_name, "drawable", context!!.packageName)))
-//            Log.i("Image name", it.abilities[0].description)
-//        }
+        if (shuCharacters.isEmpty() || wuCharacters.isEmpty() || weiCharacters.isEmpty() || kingdomlesssCharacters.isEmpty()) { queryCharacters() }
+    }
+
+    private fun queryCharacters() {
+        val shuData = characterBox.query().equal(CharacterData_.alignment, "SHU").build().find()
+        shuData.forEach { shuCharacters.add(Character(it, resources.getIdentifier(it.image_name, "drawable", context!!.packageName))) }
+
+        val wuData = characterBox.query().equal(CharacterData_.alignment, "WU").build().find()
+        wuData.forEach { wuCharacters.add(Character(it, resources.getIdentifier(it.image_name, "drawable", context!!.packageName))) }
+
+        val weiData = characterBox.query().equal(CharacterData_.alignment, "WEI").build().find()
+        weiData.forEach { weiCharacters.add(Character(it, resources.getIdentifier(it.image_name, "drawable", context!!.packageName))) }
+
+        val kingdomlessData = characterBox.query().equal(CharacterData_.alignment, "KINGDOMLESS").build().find()
+        kingdomlessData.forEach { kingdomlesssCharacters.add(Character(it, resources.getIdentifier(it.image_name, "drawable", context!!.packageName))) }
     }
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
@@ -59,7 +64,7 @@ class CharactersFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         viewManager = GridLayoutManager(this.context, 3)
-        viewAdapter = CharactersAdapter(shuCharacters, this.context!!)
+        viewAdapter = CharactersAdapter(kingdomlesssCharacters, this.context!!)
         rv_char_list.apply {
             setHasFixedSize(true)
             adapter = viewAdapter
@@ -74,22 +79,8 @@ class CharactersFragment : Fragment() {
         GlobalScope.launch {
             val parsed = klaxon.parseArray<CharacterData>(inputStream)
             parsed?.forEach { it: CharacterData ->
-//                when(it.alignment){
-//                    "Shu" -> shuCharacters.add(it)
-//                    "Wei" -> weiCharacters.add(it)
-//                    "Wu" -> wuCharacters.add(it)
-//                    "Kingdomless" -> kingdomelesssCharacters.add(it)
-//                }
-                Log.i("Image name", it.abilities[0].description)
                 characterBox.put(it)
-                val a = characterBox.query().equal(CharacterData_.id, it.id).build().findFirst()
-                Log.i("Image name", a!!.abilities[0].description)
-                allCharacters.add(it)
             }
-            Log.i("Shu", shuCharacters.size.toString())
-            Log.i("Wei", weiCharacters.size.toString())
-            Log.i("Wu", wuCharacters.size.toString())
-            Log.i("Kingdomeless", kingdomelesssCharacters.size.toString())
         }
     }
 

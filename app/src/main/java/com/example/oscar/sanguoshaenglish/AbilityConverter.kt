@@ -4,17 +4,11 @@ import com.beust.klaxon.Klaxon
 import com.example.oscar.sanguoshaenglish.Entities.Ability
 import io.objectbox.converter.PropertyConverter
 
-class AbilityConverter : PropertyConverter<Ability, String> {
-
+class AbilityConverter : PropertyConverter<List<Ability>, String> {
     private val klaxon = Klaxon()
 
-    override fun convertToEntityProperty(databaseValue: String?): Ability {
-        return Ability(0, "fas", "fsa", false)
-    }
+    override fun convertToEntityProperty(databaseValue: String): List<Ability>? = klaxon.parseArray(databaseValue)!!
 
-    override fun convertToDatabaseValue(ability: Ability?): String {
-        return klaxon.toJsonString(ability!!)
-    }
-
+    override fun convertToDatabaseValue(entityProperty: List<Ability>): String = klaxon.toJsonString(entityProperty)
 
 }
