@@ -40,21 +40,24 @@ class CharactersFragment : Fragment() {
         (activity as MainMenuActivity).supportActionBar?.title = "Characters"
         characterBox = ((activity as MainMenuActivity).application as SanGuoShaApplication).boxStore.boxFor()
 
+//                loadJson()
         if (shuCharacters.isEmpty() || wuCharacters.isEmpty() || weiCharacters.isEmpty() || kingdomlesssCharacters.isEmpty()) { queryCharacters() }
     }
 
     private fun queryCharacters() {
-        val shuData = characterBox.query().equal(CharacterData_.alignment, "SHU").build().find()
-        shuData.forEach { shuCharacters.add(Character(it, resources.getIdentifier(it.image_name, "drawable", context!!.packageName))) }
+//        GlobalScope.launch {
+            val shuData = characterBox.query().equal(CharacterData_.alignment, "SHU").build().find()
+            shuData.forEach { shuCharacters.add(Character(it, resources.getIdentifier(it.image_name, "drawable", context!!.packageName))) }
 
-        val wuData = characterBox.query().equal(CharacterData_.alignment, "WU").build().find()
-        wuData.forEach { wuCharacters.add(Character(it, resources.getIdentifier(it.image_name, "drawable", context!!.packageName))) }
+            val wuData = characterBox.query().equal(CharacterData_.alignment, "WU").build().find()
+            wuData.forEach { wuCharacters.add(Character(it, resources.getIdentifier(it.image_name, "drawable", context!!.packageName))) }
 
-        val weiData = characterBox.query().equal(CharacterData_.alignment, "WEI").build().find()
-        weiData.forEach { weiCharacters.add(Character(it, resources.getIdentifier(it.image_name, "drawable", context!!.packageName))) }
+            val weiData = characterBox.query().equal(CharacterData_.alignment, "WEI").build().find()
+            weiData.forEach { weiCharacters.add(Character(it, resources.getIdentifier(it.image_name, "drawable", context!!.packageName))) }
 
-        val kingdomlessData = characterBox.query().equal(CharacterData_.alignment, "KINGDOMLESS").build().find()
-        kingdomlessData.forEach { kingdomlesssCharacters.add(Character(it, resources.getIdentifier(it.image_name, "drawable", context!!.packageName))) }
+            val kingdomlessData = characterBox.query().equal(CharacterData_.alignment, "KINGDOMLESS").build().find()
+            kingdomlessData.forEach { kingdomlesssCharacters.add(Character(it, resources.getIdentifier(it.image_name, "drawable", context!!.packageName))) }
+//        }
     }
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
