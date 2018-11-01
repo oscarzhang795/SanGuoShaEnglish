@@ -1,4 +1,4 @@
-package com.example.oscar.sanguoshaenglish.Entities
+package com.example.oscar.sanguoshaenglish.entities
 
 import com.beust.klaxon.Json
 import io.objectbox.annotation.Entity

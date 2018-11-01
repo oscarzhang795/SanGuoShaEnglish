@@ -1,4 +1,4 @@
-package com.example.oscar.sanguoshaenglish.Entities
+package com.example.oscar.sanguoshaenglish.entities
 
 import com.example.oscar.sanguoshaenglish.AbilityConverter
 import io.objectbox.annotation.Convert

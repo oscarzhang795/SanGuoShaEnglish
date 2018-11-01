@@ -1,7 +1,7 @@
 package com.example.oscar.sanguoshaenglish
 
 import com.beust.klaxon.Klaxon
-import com.example.oscar.sanguoshaenglish.Entities.Ability
+import com.example.oscar.sanguoshaenglish.entities.Ability
 import io.objectbox.converter.PropertyConverter
 
 class AbilityConverter : PropertyConverter<List<Ability>, String> {
