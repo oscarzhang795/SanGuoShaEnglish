@@ -65,18 +65,22 @@ class CountryAdapter(private val shuCountry: ArrayList<Character>,
 
         when(position) {
             0 -> {
+                holder.itemView.tv_country_name.text = "Shu"
                 holder.cardView.rv_characters_list.adapter = CharactersAdapter(shuCountry, mContext)
                 holder.size = shuRvSize
             }
             1 -> {
+                holder.itemView.tv_country_name.text = "Wu"
                 holder.cardView.rv_characters_list.adapter = CharactersAdapter(wuCountry, mContext)
                 holder.size = wuRvSize
             }
             2 -> {
+                holder.itemView.tv_country_name.text = "Wei"
                 holder.cardView.rv_characters_list.adapter = CharactersAdapter(weiCountry, mContext)
                 holder.size = weiRvSize
             }
             3 -> {
+                holder.itemView.tv_country_name.text = "Heroes"
                 holder.cardView.rv_characters_list.adapter = CharactersAdapter(kingdomlessCountry, mContext)
                 holder.size = kingdomlessRvSize
             }
