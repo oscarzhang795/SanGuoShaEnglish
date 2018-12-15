@@ -28,43 +28,30 @@ class CharactersFragment : Fragment() {
     private lateinit var viewManager: RecyclerView.LayoutManager
     private lateinit var characterBox: Box<CharacterData>
 
-    val shuCharacters = ArrayList<Character>()
-    val wuCharacters = ArrayList<Character>()
-    val weiCharacters = ArrayList<Character>()
-    val kingdomlesssCharacters = ArrayList<Character>()
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         (activity as MainMenuActivity).supportActionBar?.title = "Characters"
+
+        // Create character box instance for objectbox
         characterBox = ((activity as MainMenuActivity).application as SanGuoShaApplication).boxStore.boxFor()
 
-//                loadJson()
-        if (shuCharacters.isEmpty() || wuCharacters.isEmpty() || weiCharacters.isEmpty() || kingdomlesssCharacters.isEmpty()) { queryCharacters() }
+        // Load database if not already setup
+        if (characterBox.query().build().findFirst() == null) {
+            loadJson()
+        }
+
     }
 
-    private fun queryCharacters() {
-//        GlobalScope.launch {
-            val shuData = characterBox.query().equal(CharacterData_.alignment, "SHU").build().find()
-            shuData.forEach { shuCharacters.add(Character(it, resources.getIdentifier(it.image_name, "drawable", context!!.packageName))) }
-
-            val wuData = characterBox.query().equal(CharacterData_.alignment, "WU").build().find()
-            wuData.forEach { wuCharacters.add(Character(it, resources.getIdentifier(it.image_name, "drawable", context!!.packageName))) }
-
-            val weiData = characterBox.query().equal(CharacterData_.alignment, "WEI").build().find()
-            weiData.forEach { weiCharacters.add(Character(it, resources.getIdentifier(it.image_name, "drawable", context!!.packageName))) }
-
-            val kingdomlessData = characterBox.query().equal(CharacterData_.alignment, "KINGDOMLESS").build().find()
-            kingdomlessData.forEach { kingdomlesssCharacters.add(Character(it, resources.getIdentifier(it.image_name, "drawable", context!!.packageName))) }
-//        }
-    }
-
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        val view = inflater.inflate(R.layout.fragment_characters, container, false)
-        return view
-    }
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? =
+            inflater.inflate(R.layout.fragment_characters, container, false)
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        val shuCharacters = characterBox.query().equal(CharacterData_.alignment, "SHU").build().find()
+        val wuCharacters = characterBox.query().equal(CharacterData_.alignment, "WU").build().find()
+        val weiCharacters = characterBox.query().equal(CharacterData_.alignment, "WEI").build().find()
+        val kingdomlesssCharacters = characterBox.query().equal(CharacterData_.alignment, "KINGDOMLESS").build().find()
 
         viewManager = LinearLayoutManager(this.context)
         viewAdapter = CountryAdapter(shuCharacters, wuCharacters, weiCharacters, kingdomlesssCharacters, this.context!!)
@@ -79,12 +66,9 @@ class CharactersFragment : Fragment() {
     private fun loadJson() {
         val inputStream = this.resources.assets.open("characters.json")
         val klaxon = Klaxon()
-
-        GlobalScope.launch {
-            val parsed = klaxon.parseArray<CharacterData>(inputStream)
-            parsed?.forEach { it: CharacterData ->
-                characterBox.put(it)
-            }
+        val parsed = klaxon.parseArray<CharacterData>(inputStream)
+        parsed?.forEach { it: CharacterData ->
+            characterBox.put(it)
         }
     }
 
