@@ -23,11 +23,11 @@ class CountryAdapter(private val shuCountry: List<CharacterData>,
 
     private val viewPool = RecyclerView.RecycledViewPool()
 
-    private val headerSize = TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 70.toFloat(), mContext.resources.displayMetrics).toInt()
-    private val shuRvSize = calculateSize(shuCountry.size)
-    private val wuRvSize = calculateSize(wuCountry.size)
-    private val weiRvSize = calculateSize(weiCountry.size)
-    private val kingdomlessRvSize = calculateSize(kingdomlessCountry.size)
+//    private val headerSize = TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 70.toFloat(), mContext.resources.displayMetrics).toInt()
+//    private val shuRvSize = calculateSize(shuCountry.size)
+//    private val wuRvSize = calculateSize(wuCountry.size)
+//    private val weiRvSize = calculateSize(weiCountry.size)
+//    private val kingdomlessRvSize = calculateSize(kingdomlessCountry.size)
 
     class ViewHolder(var cardView: CardView) : RecyclerView.ViewHolder(cardView) {
         var isCollapsed = true
@@ -42,60 +42,59 @@ class CountryAdapter(private val shuCountry: List<CharacterData>,
     override fun getItemCount(): Int = 4
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-
-        when(position) {
-            0 -> {
-                holder.itemView.tv_country_name.text = "Shu"
-                holder.cardView.rv_characters_list.adapter = CharactersAdapter(shuCountry)
-                holder.size = shuRvSize
-            }
-            1 -> {
-                holder.itemView.tv_country_name.text = "Wu"
-                holder.cardView.rv_characters_list.adapter = CharactersAdapter(wuCountry)
-                holder.size = wuRvSize
-            }
-            2 -> {
-                holder.itemView.tv_country_name.text = "Wei"
-                holder.cardView.rv_characters_list.adapter = CharactersAdapter(weiCountry)
-                holder.size = weiRvSize
-            }
-            3 -> {
-                holder.itemView.tv_country_name.text = "Heroes"
-                holder.cardView.rv_characters_list.adapter = CharactersAdapter(kingdomlessCountry)
-                holder.size = kingdomlessRvSize
-            }
-        }
-
-        holder.cardView.rv_characters_list.layoutManager = GridLayoutManager(mContext, 3)
-        holder.cardView.rv_characters_list.recycledViewPool = viewPool
-
-        holder.cardView.cv_country_banner.setOnClickListener {
-            val valueAnimator: ValueAnimator = if (!holder.isCollapsed) {
-                ValueAnimator.ofInt(holder.itemView.height, headerSize).apply {
-                    addListener(object: Animator.AnimatorListener {
-                        override fun onAnimationRepeat(p0: Animator?) {}
-
-                        override fun onAnimationEnd(p0: Animator?) {
-                            holder.isCollapsed = true
-                        }
-
-                        override fun onAnimationCancel(p0: Animator?) {}
-
-                        override fun onAnimationStart(p0: Animator?) {}
-                    })
-                }
-            } else {
-                holder.isCollapsed = false
-                ValueAnimator.ofInt(holder.itemView.height, headerSize + holder.size)
-            }
-            valueAnimator.duration = 400
-            valueAnimator.interpolator = AccelerateDecelerateInterpolator()
-            valueAnimator.addUpdateListener { animation ->
-                holder.itemView.layoutParams.height = animation.animatedValue as Int
-                holder.itemView.requestLayout()
-            }
-            valueAnimator.start()
-        }
+//        when(position) {
+//            0 -> {
+//                holder.itemView.tv_country_name.text = "Shu"
+//                holder.cardView.rv_characters_list.adapter = CharactersAdapter(shuCountry)
+//                holder.size = shuRvSize
+//            }
+//            1 -> {
+//                holder.itemView.tv_country_name.text = "Wu"
+//                holder.cardView.rv_characters_list.adapter = CharactersAdapter(wuCountry)
+//                holder.size = wuRvSize
+//            }
+//            2 -> {
+//                holder.itemView.tv_country_name.text = "Wei"
+//                holder.cardView.rv_characters_list.adapter = CharactersAdapter(weiCountry)
+//                holder.size = weiRvSize
+//            }
+//            3 -> {
+//                holder.itemView.tv_country_name.text = "Heroes"
+//                holder.cardView.rv_characters_list.adapter = CharactersAdapter(kingdomlessCountry)
+//                holder.size = kingdomlessRvSize
+//            }
+//        }
+//
+//        holder.cardView.rv_characters_list.layoutManager = GridLayoutManager(mContext, 3)
+//        holder.cardView.rv_characters_list.recycledViewPool = viewPool
+//
+//        holder.cardView.cv_country_banner.setOnClickListener {
+//            val valueAnimator: ValueAnimator = if (!holder.isCollapsed) {
+//                ValueAnimator.ofInt(holder.itemView.height, headerSize).apply {
+//                    addListener(object: Animator.AnimatorListener {
+//                        override fun onAnimationRepeat(p0: Animator?) {}
+//
+//                        override fun onAnimationEnd(p0: Animator?) {
+//                            holder.isCollapsed = true
+//                        }
+//
+//                        override fun onAnimationCancel(p0: Animator?) {}
+//
+//                        override fun onAnimationStart(p0: Animator?) {}
+//                    })
+//                }
+//            } else {
+//                holder.isCollapsed = false
+//                ValueAnimator.ofInt(holder.itemView.height, headerSize + holder.size)
+//            }
+//            valueAnimator.duration = 400
+//            valueAnimator.interpolator = AccelerateDecelerateInterpolator()
+//            valueAnimator.addUpdateListener { animation ->
+//                holder.itemView.layoutParams.height = animation.animatedValue as Int
+//                holder.itemView.requestLayout()
+//            }
+//            valueAnimator.start()
+//        }
     }
 
     fun calculateSize (listSize: Int) =

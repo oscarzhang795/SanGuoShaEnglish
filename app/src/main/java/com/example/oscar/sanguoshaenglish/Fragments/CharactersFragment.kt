@@ -28,6 +28,11 @@ class CharactersFragment : Fragment() {
     private lateinit var viewManager: RecyclerView.LayoutManager
     private lateinit var characterBox: Box<CharacterData>
 
+    private lateinit var shuCharacters: List<CharacterData>
+    private lateinit var wuCharacters: List<CharacterData>
+    private lateinit var weiCharacters: List<CharacterData>
+    private lateinit var kingdomlesssCharacters: List<CharacterData>
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         (activity as MainMenuActivity).supportActionBar?.title = "Characters"
@@ -40,6 +45,10 @@ class CharactersFragment : Fragment() {
             loadJson()
         }
 
+        shuCharacters = characterBox.query().equal(CharacterData_.alignment, "SHU").build().find()
+        wuCharacters = characterBox.query().equal(CharacterData_.alignment, "WU").build().find()
+        weiCharacters = characterBox.query().equal(CharacterData_.alignment, "WEI").build().find()
+        kingdomlesssCharacters = characterBox.query().equal(CharacterData_.alignment, "KINGDOMLESS").build().find()
     }
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? =
@@ -48,11 +57,6 @@ class CharactersFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val shuCharacters = characterBox.query().equal(CharacterData_.alignment, "SHU").build().find()
-        val wuCharacters = characterBox.query().equal(CharacterData_.alignment, "WU").build().find()
-        val weiCharacters = characterBox.query().equal(CharacterData_.alignment, "WEI").build().find()
-        val kingdomlesssCharacters = characterBox.query().equal(CharacterData_.alignment, "KINGDOMLESS").build().find()
-
         viewManager = LinearLayoutManager(this.context)
         viewAdapter = CountryAdapter(shuCharacters, wuCharacters, weiCharacters, kingdomlesssCharacters, this.context!!)
         rv_char_list.apply {
@@ -60,7 +64,6 @@ class CharactersFragment : Fragment() {
             adapter = viewAdapter
             layoutManager = viewManager
         }
-
     }
 
     private fun loadJson() {
