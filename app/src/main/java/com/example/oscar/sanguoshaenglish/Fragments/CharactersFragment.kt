@@ -10,17 +10,13 @@ import android.view.ViewGroup
 import com.beust.klaxon.Klaxon
 import com.example.oscar.sanguoshaenglish.Activities.MainMenuActivity
 import com.example.oscar.sanguoshaenglish.Adapters.CountryAdapter
-import com.example.oscar.sanguoshaenglish.entities.Character
-import com.example.oscar.sanguoshaenglish.entities.CharacterData
-import com.example.oscar.sanguoshaenglish.entities.CharacterData_
 import com.example.oscar.sanguoshaenglish.R
 import com.example.oscar.sanguoshaenglish.SanGuoShaApplication
+import com.example.oscar.sanguoshaenglish.entities.CharacterData
+import com.example.oscar.sanguoshaenglish.entities.CharacterData_
 import io.objectbox.Box
 import io.objectbox.kotlin.boxFor
 import kotlinx.android.synthetic.main.fragment_characters.*
-import kotlinx.coroutines.experimental.GlobalScope
-import kotlinx.coroutines.experimental.launch
-
 
 class CharactersFragment : Fragment() {
 
@@ -44,11 +40,6 @@ class CharactersFragment : Fragment() {
         if (characterBox.query().build().findFirst() == null) {
             loadJson()
         }
-
-        shuCharacters = characterBox.query().equal(CharacterData_.alignment, "SHU").build().find()
-        wuCharacters = characterBox.query().equal(CharacterData_.alignment, "WU").build().find()
-        weiCharacters = characterBox.query().equal(CharacterData_.alignment, "WEI").build().find()
-        kingdomlesssCharacters = characterBox.query().equal(CharacterData_.alignment, "KINGDOMLESS").build().find()
     }
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? =
@@ -56,6 +47,11 @@ class CharactersFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        shuCharacters = characterBox.query().equal(CharacterData_.alignment, "SHU").build().find()
+        wuCharacters = characterBox.query().equal(CharacterData_.alignment, "WU").build().find()
+        weiCharacters = characterBox.query().equal(CharacterData_.alignment, "WEI").build().find()
+        kingdomlesssCharacters = characterBox.query().equal(CharacterData_.alignment, "KINGDOMLESS").build().find()
 
         viewManager = LinearLayoutManager(this.context)
         viewAdapter = CountryAdapter(shuCharacters, wuCharacters, weiCharacters, kingdomlesssCharacters, this.context!!)
@@ -74,5 +70,4 @@ class CharactersFragment : Fragment() {
             characterBox.put(it)
         }
     }
-
 }

@@ -25,10 +25,6 @@ class CharactersAdapter(private val cards: List<CharacterData>) : RecyclerView.A
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-//        holder.imageView.setImageResource(cards[position].charImage)
-//        holder.binding.setVariable(BR.character, cards[position])
-//        holder.binding.executePendingBindings()
-
         val imageId = holder.itemView.context.resources.getIdentifier(cards[position].image_name, "drawable",  holder.itemView.context!!.packageName)
         Glide.with(holder.itemView.context).load(imageId).into(holder.imageView)
 
