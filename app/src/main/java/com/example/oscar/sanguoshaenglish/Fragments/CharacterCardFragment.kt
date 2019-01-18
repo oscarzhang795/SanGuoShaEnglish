@@ -1,8 +1,10 @@
 package com.example.oscar.sanguoshaenglish.Fragments
 
 
+import android.os.Build
 import android.os.Bundle
 import android.support.v4.app.Fragment
+import android.transition.TransitionInflater
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -12,6 +14,13 @@ import kotlinx.android.synthetic.main.fragment_character_card.*
 class CharacterCardFragment: Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            sharedElementEnterTransition = TransitionInflater
+                    .from(context).inflateTransition(
+                            android.R.transition.move
+                    )
+        }
+
         super.onCreate(savedInstanceState)
     }
 

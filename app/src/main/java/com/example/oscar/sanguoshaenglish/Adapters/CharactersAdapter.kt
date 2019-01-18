@@ -32,7 +32,7 @@ class CharactersAdapter(private val cards: List<CharacterData>) : RecyclerView.A
             val bundle = Bundle()
             bundle.putInt("CHARACTER_IMAGE", imageId)
             bundle.putString("CHARACTER_ABILITY", cards[position].toString())
-            (holder.itemView.context as MainMenuActivity).showCharacterCardFragment(bundle)
+            (holder.itemView.context as MainMenuActivity).showCharacterCardFragment(bundle, holder.imageView)
         }
     }
 
