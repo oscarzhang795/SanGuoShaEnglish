@@ -5,10 +5,7 @@ import android.support.v4.app.FragmentManager
 import android.support.v4.app.FragmentTransaction
 import android.support.v4.view.ViewCompat
 import android.support.v7.app.AppCompatActivity
-import android.transition.ChangeBounds
-import android.transition.ChangeImageTransform
-import android.transition.ChangeTransform
-import android.transition.TransitionSet
+import android.transition.*
 import android.view.View
 import android.widget.ImageView
 import com.example.oscar.sanguoshaenglish.Fragments.*
@@ -32,12 +29,16 @@ class MainMenuActivity : AppCompatActivity() {
            fragment = CharacterCardFragment()
         }
         fragment.arguments = bundle
+        fragment.sharedElementEnterTransition = TransitionInflater.from(this).inflateTransition(android.R.transition.move)
+        fragment.sharedElementReturnTransition = TransitionInflater.from(this).inflateTransition(android.R.transition.move)
+//        fragment.enterTransition = TransitionInflater.from(this).inflateTransition(android.R.transition.explode)
         supportFragmentManager.fragAction {
             setReorderingAllowed(true)
             addSharedElement((view as ImageView), view.transitionName)
             replace(R.id.fl_main_container, fragment, fragment::class.simpleName)
             addToBackStack(fragment::class.java.simpleName)
         }
+        supportPostponeEnterTransition()
     }
 
     fun showHowToPlayFragment() {
@@ -85,15 +86,6 @@ class MainMenuActivity : AppCompatActivity() {
         val trans = this.beginTransaction()
         trans.action()
         trans.commit()
-    }
-
-    private class DetailsTransition: TransitionSet {
-        constructor() {
-            setOrdering(ORDERING_TOGETHER)
-            addTransition(ChangeBounds())
-                    .addTransition(ChangeTransform())
-                    .addTransition(ChangeImageTransform())
-        }
     }
 
 }

@@ -3,8 +3,10 @@ package com.example.oscar.sanguoshaenglish.entities
 import com.beust.klaxon.Json
 import io.objectbox.annotation.Entity
 import io.objectbox.annotation.Id
+import kotlinx.serialization.Serializable
 
 @Entity
+@Serializable
 data class Ability(
         @Id var id: Long = 0,
         val name: String,
