@@ -63,12 +63,14 @@ class CharactersFragment : Fragment() {
         }
     }
 
+    override fun onSaveInstanceState(outState: Bundle) {
+        super.onSaveInstanceState(outState)
+    }
+
     private fun loadJson() {
         val inputStream = this.resources.assets.open("characters.json")
         val klaxon = Klaxon()
         val parsed = klaxon.parseArray<CharacterData>(inputStream)
-        parsed?.forEach { it: CharacterData ->
-            characterBox.put(it)
-        }
+        parsed?.forEach { characterBox.put(it) }
     }
 }
