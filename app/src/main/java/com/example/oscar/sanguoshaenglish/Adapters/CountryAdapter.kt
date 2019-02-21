@@ -72,6 +72,13 @@ class CountryAdapter(private val shuCountry: List<CharacterData>,
         holder.cardView.rv_characters_list.layoutManager = GridLayoutManager(mContext, 3)
         holder.cardView.rv_characters_list.recycledViewPool = viewPool
 
+        holder.itemView.layoutParams.height =
+//                if (holder.isCollapsed) {
+//            headerSize
+//        } else {
+            headerSize + holder.size
+//        }
+
         holder.cardView.cv_country_banner.setOnClickListener {
             val valueAnimator: ValueAnimator = if (!holder.isCollapsed) {
                 ValueAnimator.ofInt(holder.itemView.height, headerSize).apply {

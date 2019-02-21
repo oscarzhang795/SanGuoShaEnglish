@@ -1,9 +1,11 @@
 package com.example.oscar.sanguoshaenglish.Fragments
 
 import android.os.Bundle
+import android.os.Parcelable
 import android.support.v4.app.Fragment
 import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -17,6 +19,7 @@ import com.example.oscar.sanguoshaenglish.entities.CharacterData
 import com.example.oscar.sanguoshaenglish.entities.CharacterData_
 import io.objectbox.Box
 import io.objectbox.kotlin.boxFor
+import kotlinx.android.synthetic.main.card_country.*
 import kotlinx.android.synthetic.main.fragment_characters.*
 
 class CharactersFragment : Fragment() {
@@ -30,6 +33,8 @@ class CharactersFragment : Fragment() {
     private lateinit var weiCharacters: List<CharacterData>
     private lateinit var kingdomlesssCharacters: List<CharacterData>
 
+    private var viewState: Parcelable? = null
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         (activity as MainMenuActivity).supportActionBar?.title = "Characters"
@@ -41,6 +46,13 @@ class CharactersFragment : Fragment() {
         if (characterBox.query().build().findFirst() == null) {
             loadJson()
         }
+
+        shuCharacters = characterBox.query().equal(CharacterData_.alignment, "SHU").build().find()
+        wuCharacters = characterBox.query().equal(CharacterData_.alignment, "WU").build().find()
+        weiCharacters = characterBox.query().equal(CharacterData_.alignment, "WEI").build().find()
+        kingdomlesssCharacters = characterBox.query().equal(CharacterData_.alignment, "KINGDOMLESS").build().find()
+
+        viewAdapter = CountryAdapter(shuCharacters, wuCharacters, weiCharacters, kingdomlesssCharacters, this.context!!)
     }
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? =
@@ -48,14 +60,8 @@ class CharactersFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
-        shuCharacters = characterBox.query().equal(CharacterData_.alignment, "SHU").build().find()
-        wuCharacters = characterBox.query().equal(CharacterData_.alignment, "WU").build().find()
-        weiCharacters = characterBox.query().equal(CharacterData_.alignment, "WEI").build().find()
-        kingdomlesssCharacters = characterBox.query().equal(CharacterData_.alignment, "KINGDOMLESS").build().find()
-
         viewManager = LinearLayoutManager(this.context)
-        viewAdapter = CountryAdapter(shuCharacters, wuCharacters, weiCharacters, kingdomlesssCharacters, this.context!!)
+
         rv_char_list.apply {
             setHasFixedSize(true)
             adapter = viewAdapter
@@ -63,8 +69,14 @@ class CharactersFragment : Fragment() {
         }
     }
 
-    override fun onSaveInstanceState(outState: Bundle) {
-        super.onSaveInstanceState(outState)
+    override fun onResume() {
+        super.onResume()
+        viewManager.onRestoreInstanceState(viewState)
+    }
+
+    override fun onPause() {
+        super.onPause()
+        viewState = viewManager.onSaveInstanceState()
     }
 
     private fun loadJson() {

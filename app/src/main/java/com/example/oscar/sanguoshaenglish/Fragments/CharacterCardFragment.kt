@@ -3,6 +3,8 @@ package com.example.oscar.sanguoshaenglish.Fragments
 
 import android.os.Bundle
 import android.support.v4.app.Fragment
+import android.text.method.ScrollingMovementMethod
+import android.transition.TransitionInflater
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -22,6 +24,6 @@ class CharacterCardFragment: Fragment() {
         center_character_image.setImageResource(arguments!!.getInt("CHARACTER_IMAGE"))
         center_character_image.transitionName = (arguments!!.getString("TRANSITION_NAME"))
         tv_abilities.text = arguments!!.getString("CHARACTER_ABILITY")
-
+        tv_abilities.movementMethod = ScrollingMovementMethod()
     }
 }

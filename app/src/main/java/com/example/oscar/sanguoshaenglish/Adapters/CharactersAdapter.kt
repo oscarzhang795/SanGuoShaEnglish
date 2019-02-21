@@ -27,7 +27,7 @@ class CharactersAdapter(private val cards: List<CharacterData>) : RecyclerView.A
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val imageId = holder.itemView.context.resources.getIdentifier(cards[position].image_name, "drawable",  holder.itemView.context!!.packageName)
         Glide.with(holder.itemView.context).load(imageId).into(holder.imageView)
-
+        holder.imageView.transitionName = "image_scale $position"
         holder.imageView.setOnClickListener {
             val bundle = Bundle()
             holder.imageView.transitionName = "image_scale $position"

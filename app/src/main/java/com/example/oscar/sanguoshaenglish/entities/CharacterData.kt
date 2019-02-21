@@ -4,9 +4,11 @@ import com.example.oscar.sanguoshaenglish.AbilityConverter
 import io.objectbox.annotation.Convert
 import io.objectbox.annotation.Entity
 import io.objectbox.annotation.Id
+import kotlinx.serialization.Serializable
 import java.lang.StringBuilder
 
 @Entity
+@Serializable
 data class CharacterData(
         @Id var id: Long = 0,
         val name: String,

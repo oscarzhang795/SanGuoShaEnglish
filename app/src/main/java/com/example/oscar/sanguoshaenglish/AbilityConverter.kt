@@ -10,7 +10,6 @@ class AbilityConverter : PropertyConverter<List<Ability>, String> {
 
     override fun convertToEntityProperty(databaseValue: String): List<Ability>? = Json.parse(Ability.serializer().list, databaseValue)
 
-    @UseExperimental(ImplicitReflectionSerializer::class)
     override fun convertToDatabaseValue(entityProperty: List<Ability>): String = Json.stringify(Ability.serializer().list, entityProperty)
 
 }

@@ -17,7 +17,7 @@ class MainMenuActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main_menu)
-        showMainMenuFragment()
+        showCharactersFragment()
     }
 
     /*************************************************
@@ -30,14 +30,15 @@ class MainMenuActivity : AppCompatActivity() {
         }
         fragment.arguments = bundle
         fragment.sharedElementEnterTransition = TransitionInflater.from(this).inflateTransition(android.R.transition.move)
-        fragment.sharedElementReturnTransition = TransitionInflater.from(this).inflateTransition(android.R.transition.move)
+
+        val fragmentOne = supportFragmentManager.findFragmentByTag(CharactersFragment::class.java.simpleName)
+        fragmentOne.sharedElementReturnTransition = TransitionInflater.from(this).inflateTransition(android.R.transition.move)
         supportFragmentManager.fragAction {
             setReorderingAllowed(true)
             addSharedElement((view as ImageView), view.transitionName)
             replace(R.id.fl_main_container, fragment, fragment::class.simpleName)
             addToBackStack(fragment::class.java.simpleName)
         }
-        supportPostponeEnterTransition()
     }
 
     fun showHowToPlayFragment() {
@@ -46,7 +47,7 @@ class MainMenuActivity : AppCompatActivity() {
             fragment = HowToPlayFragment()
         }
         supportFragmentManager.fragAction {
-            replace(R.id.fl_main_container, fragment, fragment::class.simpleName).addToBackStack(fragment::class.java.simpleName)
+            replace(R.id.fl_main_container, fragment, fragment::class.java.simpleName).addToBackStack(fragment::class.java.simpleName)
         }
     }
 
@@ -56,7 +57,7 @@ class MainMenuActivity : AppCompatActivity() {
             fragment = CharactersFragment()
         }
         supportFragmentManager.fragAction {
-            replace(R.id.fl_main_container, fragment, fragment::class.simpleName).addToBackStack(fragment::class.java.simpleName)
+            replace(R.id.fl_main_container, fragment, fragment::class.java.simpleName).addToBackStack(fragment::class.java.simpleName)
         }
     }
 
@@ -66,7 +67,7 @@ class MainMenuActivity : AppCompatActivity() {
             fragment = CardsFragment()
         }
         supportFragmentManager.fragAction {
-            replace(R.id.fl_main_container, fragment, fragment::class.simpleName).addToBackStack(fragment::class.java.simpleName)
+            replace(R.id.fl_main_container, fragment, fragment::class.java.simpleName).addToBackStack(fragment::class.java.simpleName)
         }
     }
 
@@ -76,11 +77,11 @@ class MainMenuActivity : AppCompatActivity() {
            fragment = MainMenuFragment()
         }
         supportFragmentManager.fragAction {
-            replace(R.id.fl_main_container, fragment, fragment::class.simpleName).addToBackStack(fragment::class.java.simpleName)
+            replace(R.id.fl_main_container, fragment, fragment::class.java.simpleName).addToBackStack(fragment::class.java.simpleName)
         }
     }
 
-    // Extension function for transactions
+    // Extension function for fragment transactions
     private fun FragmentManager.fragAction(action: FragmentTransaction.() -> FragmentTransaction) {
         val trans = this.beginTransaction()
         trans.action()
