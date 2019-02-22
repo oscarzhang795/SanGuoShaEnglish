@@ -5,10 +5,12 @@ import android.os.Parcelable
 import android.support.v4.app.Fragment
 import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
+import android.transition.TransitionInflater
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.view.ViewTreeObserver
 import android.widget.ImageView
 import com.beust.klaxon.Klaxon
 import com.example.oscar.sanguoshaenglish.Activities.MainMenuActivity
@@ -46,6 +48,7 @@ class CharactersFragment : Fragment() {
         if (characterBox.query().build().findFirst() == null) {
             loadJson()
         }
+        sharedElementReturnTransition = TransitionInflater.from(activity).inflateTransition(android.R.transition.move)
 
         shuCharacters = characterBox.query().equal(CharacterData_.alignment, "SHU").build().find()
         wuCharacters = characterBox.query().equal(CharacterData_.alignment, "WU").build().find()
@@ -55,8 +58,10 @@ class CharactersFragment : Fragment() {
         viewAdapter = CountryAdapter(shuCharacters, wuCharacters, weiCharacters, kingdomlesssCharacters, this.context!!)
     }
 
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? =
-            inflater.inflate(R.layout.fragment_characters, container, false)
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+        postponeEnterTransition()
+        return inflater.inflate(R.layout.fragment_characters, container, false)
+    }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -67,6 +72,15 @@ class CharactersFragment : Fragment() {
             adapter = viewAdapter
             layoutManager = viewManager
         }
+
+        //Start transition after recycler view is loaded
+        rv_char_list.viewTreeObserver
+                .addOnGlobalLayoutListener(object : ViewTreeObserver.OnGlobalLayoutListener {
+                    override fun onGlobalLayout() {
+                        startPostponedEnterTransition()
+                        rv_char_list.viewTreeObserver.removeOnGlobalLayoutListener(this)
+                    }
+                })
     }
 
     override fun onResume() {

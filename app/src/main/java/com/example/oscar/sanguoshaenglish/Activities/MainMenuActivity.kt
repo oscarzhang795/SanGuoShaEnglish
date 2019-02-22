@@ -30,9 +30,6 @@ class MainMenuActivity : AppCompatActivity() {
         }
         fragment.arguments = bundle
         fragment.sharedElementEnterTransition = TransitionInflater.from(this).inflateTransition(android.R.transition.move)
-
-        val fragmentOne = supportFragmentManager.findFragmentByTag(CharactersFragment::class.java.simpleName)
-        fragmentOne.sharedElementReturnTransition = TransitionInflater.from(this).inflateTransition(android.R.transition.move)
         supportFragmentManager.fragAction {
             setReorderingAllowed(true)
             addSharedElement((view as ImageView), view.transitionName)

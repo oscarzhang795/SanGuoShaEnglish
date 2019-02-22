@@ -33,7 +33,7 @@ class CharactersAdapter(private val cards: List<CharacterData>) : RecyclerView.A
             holder.imageView.transitionName = "image_scale $position"
             bundle.putInt("CHARACTER_IMAGE", imageId)
             bundle.putString("CHARACTER_ABILITY", cards[position].toString())
-            bundle.putString("TRANSITION_NAME", "image_scale $position")
+            bundle.putString("TRANSITION_NAME", it.transitionName)
             (holder.itemView.context as MainMenuActivity).showCharacterCardFragment(bundle, holder.imageView)
         }
     }
