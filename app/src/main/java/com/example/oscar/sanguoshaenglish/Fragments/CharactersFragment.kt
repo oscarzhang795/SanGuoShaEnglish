@@ -83,16 +83,6 @@ class CharactersFragment : Fragment() {
                 })
     }
 
-    override fun onResume() {
-        super.onResume()
-        viewManager.onRestoreInstanceState(viewState)
-    }
-
-    override fun onPause() {
-        super.onPause()
-        viewState = viewManager.onSaveInstanceState()
-    }
-
     private fun loadJson() {
         val inputStream = this.resources.assets.open("characters.json")
         val klaxon = Klaxon()

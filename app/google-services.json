@@ -23,14 +23,6 @@
           }
         },
         {
-          "client_id": "1022292026724-t7bhn1fl9a5rib711n1rselifghhdu5d.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.example.oscar.sanguoshaenglish",
-            "certificate_hash": "bc1a74c547be17a78eee3b04e8c50e3320cb7ef2"
-          }
-        },
-        {
           "client_id": "1022292026724-hi5thbq8t56tc3ek5tfb65qpi76jps0h.apps.googleusercontent.com",
           "client_type": 3
         }
