@@ -21,7 +21,7 @@
             android:textSize="30sp"
             android:paddingLeft="4dp"
             android:paddingRight="4dp"
-            app:layout_constraintStart_toStartOf="@id/iv_country_banner"
+            app:layout_constraintStart_toEndOf="@id/iv_mascot"
             app:layout_constraintBottom_toBottomOf="@id/iv_country_banner"
             app:layout_constraintTop_toTopOf="@id/iv_country_banner" />
 
@@ -29,16 +29,16 @@
             android:id="@+id/iv_country_banner"
             android:layout_width="match_parent"
             android:layout_height="70dp"
-
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
+            android:id="@+id/iv_mascot"
             android:layout_width="wrap_content"
             android:layout_height="0dp"
-            android:src="@drawable/shu_liu_bei"
-            app:layout_constraintStart_toEndOf="@id/tv_country_name"
+            android:src="@drawable/shumascot"
+            app:layout_constraintStart_toStartOf="@id/iv_country_banner"
             app:layout_constraintTop_toTopOf="@id/iv_country_banner"
             app:layout_constraintBottom_toBottomOf="@id/iv_country_banner"/>
 

@@ -3,14 +3,12 @@ package com.example.oscar.sanguoshaenglish.Activities
 import android.os.Bundle
 import android.support.v4.app.FragmentManager
 import android.support.v4.app.FragmentTransaction
-import android.support.v4.view.ViewCompat
 import android.support.v7.app.AppCompatActivity
-import android.transition.*
+import android.transition.TransitionInflater
 import android.view.View
 import android.widget.ImageView
 import com.example.oscar.sanguoshaenglish.Fragments.*
 import com.example.oscar.sanguoshaenglish.R
-import kotlinx.android.synthetic.main.fragment_character_card.view.*
 
 class MainMenuActivity : AppCompatActivity() {
 
@@ -54,7 +52,7 @@ class MainMenuActivity : AppCompatActivity() {
             fragment = CharactersFragment()
         }
         supportFragmentManager.fragAction {
-            replace(R.id.fl_main_container, fragment, fragment::class.java.simpleName).addToBackStack(fragment::class.java.simpleName)
+            replace(R.id.fl_main_container, fragment, fragment::class.java.simpleName)
         }
     }
 

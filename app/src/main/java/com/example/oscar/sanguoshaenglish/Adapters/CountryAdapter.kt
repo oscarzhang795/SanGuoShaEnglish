@@ -34,7 +34,7 @@ class CountryAdapter(private val shuCountry: List<CharacterData>,
         var size = 0
     }
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CountryAdapter.ViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.card_country, parent, false) as CardView
         return ViewHolder(view)
     }
@@ -45,24 +45,28 @@ class CountryAdapter(private val shuCountry: List<CharacterData>,
         when(position) {
             0 -> {
                 holder.itemView.tv_country_name.text = "Shu"
+                holder.itemView.iv_mascot.setImageResource(R.drawable.shumascot)
                 holder.cardView.rv_characters_list.adapter = CharactersAdapter(shuCountry)
                 holder.cardView.setBackgroundResource(R.drawable.ic_shurectangle)
                 holder.size = shuRvSize
             }
             1 -> {
                 holder.itemView.tv_country_name.text = "Wu"
+                holder.itemView.iv_mascot.setImageResource(R.drawable.wumascot)
                 holder.cardView.rv_characters_list.adapter = CharactersAdapter(wuCountry)
                 holder.cardView.setBackgroundResource(R.drawable.ic_wurectangle)
                 holder.size = wuRvSize
             }
             2 -> {
                 holder.itemView.tv_country_name.text = "Wei"
+                holder.itemView.iv_mascot.setImageResource(R.drawable.weimascot)
                 holder.cardView.rv_characters_list.adapter = CharactersAdapter(weiCountry)
                 holder.cardView.setBackgroundResource(R.drawable.ic_weirectangle)
                 holder.size = weiRvSize
             }
             3 -> {
                 holder.itemView.tv_country_name.text = "Heroes"
+                holder.itemView.iv_mascot.setImageResource(R.drawable.heromascot)
                 holder.cardView.rv_characters_list.adapter = CharactersAdapter(kingdomlessCountry)
                 holder.cardView.setBackgroundResource(R.drawable.ic_herorectangle)
                 holder.size = kingdomlessRvSize
@@ -72,12 +76,11 @@ class CountryAdapter(private val shuCountry: List<CharacterData>,
         holder.cardView.rv_characters_list.layoutManager = GridLayoutManager(mContext, 3)
         holder.cardView.rv_characters_list.recycledViewPool = viewPool
 
-        holder.itemView.layoutParams.height =
-//                if (holder.isCollapsed) {
-//            headerSize
-//        } else {
+        holder.itemView.layoutParams.height = if (holder.isCollapsed) {
+            headerSize
+        } else {
             headerSize + holder.size
-//        }
+        }
 
         holder.cardView.cv_country_banner.setOnClickListener {
             val valueAnimator: ValueAnimator = if (!holder.isCollapsed) {
@@ -108,7 +111,7 @@ class CountryAdapter(private val shuCountry: List<CharacterData>,
         }
     }
 
-    fun calculateSize (listSize: Int) =
+    private fun calculateSize (listSize: Int) =
         if (listSize % 3 == 0) {
             TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, (listSize/3) * 205.toFloat(), mContext.resources.displayMetrics).toInt()
         } else {

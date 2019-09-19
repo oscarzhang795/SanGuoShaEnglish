@@ -83,6 +83,10 @@ class CharactersFragment : Fragment() {
                 })
     }
 
+    override fun onSaveInstanceState(outState: Bundle) {
+        super.onSaveInstanceState(outState)
+    }
+
     private fun loadJson() {
         val inputStream = this.resources.assets.open("characters.json")
         val klaxon = Klaxon()
